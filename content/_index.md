@@ -26,11 +26,11 @@ I have a far-reaching understanding for the world of technology. With programmin
 <div class="trait-box" onclick="toggleTrait(this)">
   <div class="trait-header">Strong Academic Background</div>
   <div class="trait-content">
-  I have remained very disciplined and conscientious for my courses and during my undergraduate years (2017-2021), I have remained on the Dean's Honor List for 5+ semesters and received an award for Magna Cum Laude at my last semester and received my Bachelors for <a href="https://image-ms.s3.us-east-1.amazonaws.com/Bachelors.jpg" target="_blank"> Computer Information Systems. </a> I have also received my Masters in Cybersecurity  These honors of mine demonstrate that I possess the ability to handle the academic rigor for graduate studies. 
+  I have remained very disciplined and conscientious for my courses and during my undergraduate years (2017-2021), I have remained on the Dean's Honor List for 5+ semesters and received an award for Magna Cum Laude at my last semester and received my Bachelors for <a href="https://image-ms.s3.us-east-1.amazonaws.com/Bachelors.jpg" target="_blank"> Computer Information Systems. </a> I have also received my <a href="https://image-ms.s3.us-east-1.amazonaws.com/Masters.png" target="_blank">Masters in Cybersecurity</a> with relevant courses such as   These honors of mine demonstrate that I possess the ability to handle the academic rigor for graduate studies. 
     </div>
 </div> 
 
-<!-- https://image-ms.s3.us-east-1.amazonaws.com/Masters.png -->
+
 
 
 
