@@ -1,12 +1,34 @@
 
-.trait-box {
+/* .trait-box {
   cursor: pointer;
   margin-bottom: 1rem;
   border-radius: 20px;
   padding: 1rem;
   transition: background-color 0.3s ease;
   background-color: transparent;
+  
+  
+} */
+
+.trait-box {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  padding: 1rem; /* remove vertical padding */
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
+
+
+
 
 .trait-box:hover {
   background-color: rgba(255, 255, 255, 0.05); /* subtle oval-like glow */
@@ -22,6 +44,10 @@
   text-align: center;
 }
 
+
+
+
+
 .icon {
   width: 24px;
   height: 24px;
@@ -33,6 +59,7 @@
   display: none;
   margin-top: 1rem;
   line-height: 1.6;
+  
 }
 
 /* https://media.istockphoto.com/id/1198684732/photo/stars-and-galaxy-space-sky-night-background.jpg?s=612x612&w=0&k=20&c=U6AnXKYJpi9H2tCeGGXSAS_ctR4pgsC-yC07J5ECH5M= */

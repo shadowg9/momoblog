@@ -28,7 +28,9 @@ I have a far-reaching understanding for the world of technology. With programmin
   <div class="trait-content">
   I have remained very disciplined and conscientious for my courses and during my undergraduate years (2017-2021), I have remained on the Dean's Honor List for 5+ semesters and received an award for Magna Cum Laude at my last semester and received my Bachelors for <a href="https://image-ms.s3.us-east-1.amazonaws.com/Bachelors.jpg" target="_blank"> Computer Information Systems</a> with relevant courses such as Project Management, Secure Application Design, Cloud Computing Infrastructure and Archietcture, Enterprise Applications Development, Database Administration and Implementation, and Intrusion Response and Detection.   
   
-  I have also received my <a href="https://image-ms.s3.us-east-1.amazonaws.com/Masters.png" target="_blank">Masters in Cybersecurity</a> (2023-2024) and received Sumna Cum Laude with a 3.934 GPA, with relevant courses such as Network Security, Secure Enterprise Computing, Secure Software Design, Cybersecurity Tools, Cybersecurity Risk Management, Advanced SOC Analysis, and Applied Cryptography. These honors and degrees of mine demonstrated to me that possessing the capabilities to handle the academic rigor will translate seamlessly into a professional work environment. 
+  I have also received my <a href="https://image-ms.s3.us-east-1.amazonaws.com/Masters.png" target="_blank">Masters in Cybersecurity</a> (2023-2024) and received Sumna Cum Laude with a 3.934 GPA. My graduate work focused on advanced topics with the relevant courses pertaining to Network Security, Secure Enterprise Computing, Secure Software Design, Cybersecurity Tools, Cybersecurity Risk Management, Advanced SOC Analysis, and Applied Cryptography. 
+  
+  These academic achievements serves as a testament that my capabilities to handle the academic rigor will all translate seamlessly into a professional work environment. My time spent at the University of Houston has provided me with the foundation needed to deliver multiple applications and documentations with optimal effiency, effectiveness, and quality.    
     </div>
 </div> 
 

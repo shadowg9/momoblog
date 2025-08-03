@@ -57,14 +57,14 @@ weight = 3
 name = "AWS Cloud Practitioner"
 parent = "Certifications"
 pageRef = "certifications"
-url = "/certifications"
+url = "/certifications/certs/aws.md"
 weight = 3
 
 [[main]]
 name = "Security+"
 parent = "Certifications"
 pageRef = "certifications"
-url = "/certifications"
+url = "/certifications/certs/sec.md"
 weight = 3
 
 [[main]]

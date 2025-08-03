@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certifications Aquired on Mohammed Sajjad</title>
+    <link>http://localhost:1313/certifications/</link>
+    <description>Recent content in Certifications Aquired on Mohammed Sajjad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© Copyright, 2025 Momo. All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/certifications/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Security Certification</title>
+      <link>http://localhost:1313/certifications/certs/sec/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/certifications/certs/sec/</guid>
+      <description>&lt;p&gt;Plan to take it soon by sometime in August to September.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>AWS Cloud Practitioner Certification</title>
+      <link>http://localhost:1313/certifications/certs/aws/</link>
+      <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/certifications/certs/aws/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.credly.com/badges/3edd712f-67fb-4027-a183-26f396378ae8&#34; target=&#34;_blank&#34; &gt;Link&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
