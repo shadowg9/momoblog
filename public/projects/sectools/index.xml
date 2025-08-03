@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security Tools on Mohammed Sajjad</title>
+    <link>http://localhost:1313/projects/sectools/</link>
+    <description>Recent content in Security Tools on Mohammed Sajjad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© Copyright, 2025 Momo. All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 10 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/projects/sectools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Security Tool 1: DNSChef</title>
+      <link>http://localhost:1313/projects/sectools/securitytools/</link>
+      <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools/</guid>
+      <description>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;DNSChef is a DNS proxy server that intercepts DNS queries and is developed in Python. It is
+used for analyzing malware and penetration testing and is a valuable tool for users as it allows
+them to filter DNS queries, redirect traffic, and poison DNS servers. DNSChef also allows users
+to create custom DNS responses based off a set of configured rules which can be utilized to
+simulate attacks to test the effectiveness of other security tools.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

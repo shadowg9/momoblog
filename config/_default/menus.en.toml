@@ -28,6 +28,13 @@ url = "/projects"
 weight = 2
 
 [[main]]
+name = "Security Tools"
+parent = "Projects"
+pageRef = "projects/sectools/_index.md"
+url = "/securitytools.md"
+weight = 2
+
+[[main]]
 name = "Secure E-Commerce Web Application"
 parent = "Projects"
 pageRef = "projects"
