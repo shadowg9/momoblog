@@ -23,8 +23,8 @@ weight = 2
 [[main]]
 name = "Car Dealership Web Application"
 parent = "Projects"
-pageRef = "projects"
-url = "/projects"
+pageRef = "projects/carapp/_index.md"
+url = "/projects/carapp/_index.md"
 weight = 2
 
 [[main]]

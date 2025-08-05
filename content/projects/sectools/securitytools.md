@@ -1,6 +1,6 @@
 +++
 date = '2024-06-10'
-title = 'Security Tool 1: DNSChef'
+title = 'Security Tool 4: DNSChef'
 draft = false
 tags = ['projects']
 categories = ['updates']

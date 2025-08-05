@@ -7,10 +7,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Copyright, 2025 Momo. All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 10 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Security Tool 1: DNSChef</title>
+      <title>Security Tool 9: Stegseek</title>
+      <link>http://localhost:1313/projects/sectools/securitytools6/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tools 7-10: Systools</title>
+      <link>http://localhost:1313/projects/sectools/securitytools7/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools7/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tool 8: Stegsolve</title>
+      <link>http://localhost:1313/projects/sectools/securitytools5/</link>
+      <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tool 7: Exiftool</title>
+      <link>http://localhost:1313/projects/sectools/securitytools4/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools4/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tool 6: Steghide</title>
+      <link>http://localhost:1313/projects/sectools/securitytools3/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools3/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tool 5: SQLMap</title>
+      <link>http://localhost:1313/projects/sectools/securitytools2/</link>
+      <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tool 4: DNSChef</title>
       <link>http://localhost:1313/projects/sectools/securitytools/</link>
       <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
       
@@ -21,6 +81,44 @@ used for analyzing malware and penetration testing and is a valuable tool for us
 them to filter DNS queries, redirect traffic, and poison DNS servers. DNSChef also allows users
 to create custom DNS responses based off a set of configured rules which can be utilized to
 simulate attacks to test the effectiveness of other security tools.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tools 1-3: Steganography</title>
+      <link>http://localhost:1313/projects/sectools/securitytools8/</link>
+      <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Car Dealership Web Application</title>
+      <link>http://localhost:1313/projects/carapp/</link>
+      <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/carapp/</guid>
+      <description>&lt;section class=&#34;container&#34;&gt;
+    &lt;div class=&#34;slider-wrapper&#34;&gt;
+        &lt;div class=&#34;slider&#34;&gt;
+        &lt;img id=&#34;Car1&#34; src=&#34;https://image-ms.s3.amazonaws.com/Car1.png&#34;&gt;&lt;/img&gt;
+        &lt;img id=&#34;Car2&#34; src=&#34;https://image-ms.s3.amazonaws.com/Car2.png&#34;&gt;&lt;/img&gt;
+        &lt;img id=&#34;Car3&#34; src=&#34;https://image-ms.s3.amazonaws.com/Car3.png&#34;&gt;&lt;/img&gt;
+        &lt;img id=&#34;Car4&#34; src=&#34;https://image-ms.s3.amazonaws.com/Car4.png&#34;&gt;&lt;/img&gt;
+        &lt;img id=&#34;Car5&#34; src=&#34;https://image-ms.s3.amazonaws.com/Car5.png&#34;&gt;&lt;/img&gt;
+        &lt;img id=&#34;Car6&#34; src=&#34;https://image-ms.s3.amazonaws.com/Car6.png&#34;&gt;&lt;/img&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;slider-nav&#34;&gt;
+            &lt;a href=&#34;#Car1&#34;&gt;&lt;/a&gt;
+            &lt;a href=&#34;#Car2&#34;&gt;&lt;/a&gt;
+            &lt;a href=&#34;#Car3&#34;&gt;&lt;/a&gt;
+            &lt;a href=&#34;#Car4&#34;&gt;&lt;/a&gt;
+            &lt;a href=&#34;#Car5&#34;&gt;&lt;/a&gt;
+            &lt;a href=&#34;#Car6&#34;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</description>
       
     </item>
     
