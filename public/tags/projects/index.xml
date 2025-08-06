@@ -110,15 +110,30 @@ simulate attacks to test the effectiveness of other security tools.&lt;/p&gt;</d
         &lt;img id=&#34;Car5&#34; src=&#34;https://image-ms.s3.amazonaws.com/Car5.png&#34;&gt;&lt;/img&gt;
         &lt;img id=&#34;Car6&#34; src=&#34;https://image-ms.s3.amazonaws.com/Car6.png&#34;&gt;&lt;/img&gt;
         &lt;/div&gt;
-        &lt;div class=&#34;slider-nav&#34;&gt;
-            &lt;a href=&#34;#Car1&#34;&gt;&lt;/a&gt;
-            &lt;a href=&#34;#Car2&#34;&gt;&lt;/a&gt;
-            &lt;a href=&#34;#Car3&#34;&gt;&lt;/a&gt;
-            &lt;a href=&#34;#Car4&#34;&gt;&lt;/a&gt;
-            &lt;a href=&#34;#Car5&#34;&gt;&lt;/a&gt;
-            &lt;a href=&#34;#Car6&#34;&gt;&lt;/a&gt;
-    &lt;/div&gt;
-&lt;/section&gt;</description>
+        &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car1&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Home Page&lt;/p&gt;&lt;/div&gt;
+        &lt;script&gt;
+        document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+            function showCaptionForHash() {
+                // Hide all captions
+                document.querySelectorAll(&#39;.slider-caption&#39;).forEach(function(el) {
+                    el.style.display = &#39;none&#39;;
+                });
+                // Show the caption for the current hash
+                var hash = window.location.hash;
+                if (hash &amp;&amp; hash.startsWith(&#39;#Car&#39;)) {
+                    var caption = document.getElementById(&#39;caption-&#39; + hash.substring(1));
+                    if (caption) caption.style.display = &#39;block&#39;;
+                }
+            }
+            window.addEventListener(&#39;hashchange&#39;, showCaptionForHash);
+            showCaptionForHash();
+        });
+        &lt;/script&gt;
+        &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car2&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Login Page&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car3&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Registration Page&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car4&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Table of Available Cars&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car5&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Users Table + Profile Dropdown&lt;/p&gt;&lt;/div&gt;
+        &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car6&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Form to Register Vehicle into Table&lt;/p&gt;</description>
       
     </item>
     
