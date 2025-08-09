@@ -15,7 +15,12 @@
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/projects/sectools/securitytools6/</guid>
-      <description></description>
+      <description>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
+&lt;h2&gt;What problem does it solve?&lt;/h2&gt;
+&lt;h2&gt;What data is needed?&lt;/h2&gt;
+&lt;h2&gt;How do you test it?&lt;/h2&gt;
+&lt;h2&gt;References&lt;/h2&gt;</description>
       
     </item>
     
@@ -35,7 +40,12 @@
       <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/projects/sectools/securitytools5/</guid>
-      <description></description>
+      <description>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
+&lt;h2&gt;What problem does it solve?&lt;/h2&gt;
+&lt;h2&gt;What data is needed?&lt;/h2&gt;
+&lt;h2&gt;How do you test it?&lt;/h2&gt;
+&lt;h2&gt;References&lt;/h2&gt;</description>
       
     </item>
     
@@ -45,7 +55,12 @@
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/projects/sectools/securitytools4/</guid>
-      <description></description>
+      <description>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
+&lt;h2&gt;What problem does it solve?&lt;/h2&gt;
+&lt;h2&gt;What data is needed?&lt;/h2&gt;
+&lt;h2&gt;How do you test it?&lt;/h2&gt;
+&lt;h2&gt;References&lt;/h2&gt;</description>
       
     </item>
     
@@ -55,7 +70,12 @@
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/projects/sectools/securitytools3/</guid>
-      <description></description>
+      <description>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
+&lt;h2&gt;What problem does it solve?&lt;/h2&gt;
+&lt;h2&gt;What data is needed?&lt;/h2&gt;
+&lt;h2&gt;How do you test it?&lt;/h2&gt;
+&lt;h2&gt;References&lt;/h2&gt;</description>
       
     </item>
     
@@ -65,7 +85,13 @@
       <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/projects/sectools/securitytools2/</guid>
-      <description></description>
+      <description>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;SQLMap is a python-based penetration testing tool that automates the detecting and exploiting process of potential SQL injection vulnerabilities found in web applications. It is also open source and able to take over database servers. Some of the different types of automated SQL injections attacks that can be deployed include error based, time delay, stacked queries, Boolean based, and union based attacks.&lt;/p&gt;
+&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
+&lt;p&gt;Found it in my collection of security tools provided by Kali Linux and it was located in the Database Assessment category. To get it manually, you can install it from this GitHub Repository: &lt;a
+  href=&#34;https://github.com/sqlmapproject/sqlmap&#34;
+    target=&#34;_blank&#34;
+  &gt;https://github.com/sqlmapproject/sqlmap&lt;/a&gt;.&lt;/p&gt;</description>
       
     </item>
     
