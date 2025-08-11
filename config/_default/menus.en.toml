@@ -37,15 +37,15 @@ weight = 2
 [[main]]
 name = "Secure E-Commerce Web Application"
 parent = "Projects"
-pageRef = "projects"
-url = "/projects"
+pageRef = "/projects/ecommerce/_index.md"
+url = "/projects/ecommerce/_index.md"
 weight = 2
 
 [[main]]
 name = "Scalable Data Lakehouse Pipeline"
 parent = "Projects"
-pageRef = "projects"
-url = "/projects"
+pageRef = "/projects/datapipeline/_index.md"
+url = "/projects/datapipeline/_index.md"
 weight = 2
 
 [[main]]
@@ -56,15 +56,15 @@ weight = 3
 [[main]]
 name = "AWS Cloud Practitioner"
 parent = "Certifications"
-pageRef = "certifications"
-url = "/certifications/certs/aws.md"
+pageRef = "certifications/certs/_aws.md"
+url = "/certifications/certs/_aws.md"
 weight = 3
 
 [[main]]
 name = "Security+"
 parent = "Certifications"
-pageRef = "certifications"
-url = "/certifications/certs/sec.md"
+pageRef = "certifications/certs/_sec.md"
+url = "/certifications/certs/_sec.md"
 weight = 3
 
 [[main]]

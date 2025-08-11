@@ -7,25 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Copyright, 2025 Momo. All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/updates/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Testing</title>
-      <link>http://localhost:1313/posts/mypost2/</link>
-      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/mypost2/</guid>
-      <description>&lt;p&gt;I have finalized a new version of my Website Portfolio where it will be easier to peform updates and add in new projects I have worked on to showcase my programming abilities. Here is the link to my old website portfolio: .&lt;/p&gt;</description>
-      
-    </item>
+    <lastBuildDate>Sun, 10 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/updates/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Starting Out</title>
       <link>http://localhost:1313/posts/mypost/</link>
-      <pubDate>Wed, 30 Jul 2025 01:08:22 -0500</pubDate>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/mypost/</guid>
-      <description>&lt;p&gt;I created a Github blogpage to document my progress working on various projects and showcase what I have learned!&lt;/p&gt;
+      <description>&lt;p&gt;I have finalized a new version of my Website Portfolio where it will be easier to peform updates and add in new projects I have worked on to showcase my programming abilities. Here is the link to my old website portfolio: &lt;a
+  href=&#34;http://react-web-portfolio.s3-website-us-east-1.amazonaws.com/&#34;
+    target=&#34;_blank&#34;
+  &gt;http://react-web-portfolio.s3-website-us-east-1.amazonaws.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My main purpose for this site is to document my progress working on various projects and showcase what I have learned!&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;This is a print statement to test out JavaScript.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
@@ -34,27 +28,54 @@
     </item>
     
     <item>
-      <title>Security Tool 9: Stegseek</title>
-      <link>http://localhost:1313/projects/sectools/securitytools6/</link>
-      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/sectools/securitytools6/</guid>
-      <description>&lt;h2&gt;What is it?&lt;/h2&gt;
-&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
-&lt;h2&gt;What problem does it solve?&lt;/h2&gt;
-&lt;h2&gt;What data is needed?&lt;/h2&gt;
-&lt;h2&gt;How do you test it?&lt;/h2&gt;
-&lt;h2&gt;References&lt;/h2&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Security Tools 7-10: Systools</title>
+      <title>Security Tools 10-14: Systools</title>
       <link>http://localhost:1313/projects/sectools/securitytools7/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/projects/sectools/securitytools7/</guid>
-      <description></description>
+      <description>&lt;h1&gt;Tools Used: Process Explorer, Process Monitor, Autoruns, ListDLLs&lt;/h1&gt;
+&lt;h2&gt;Process Exploer&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Displays information about processes such as how much CPU and Memory is being allocated to each one and which DLLs they contain&lt;/li&gt;
+&lt;li&gt;Consists of two sub windows where the top one shows actives processes and bottom one provides the options to view information regarding the Handles, DLLs, and Threads &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Process Monitor&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Advanced logging tool capturing and displaying comprehensive details of the Registry, process/thread activity, and files in real time 
+&lt;/li&gt;
+&lt;li&gt;Combines the features of two legacy Sysinternals utilities, Filemon and Regmon  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Autoruns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Shows you what programs are configured to execute at system bootup or login
+&lt;/li&gt;
+&lt;li&gt;Shows full list of Registry file system locations available for auto-start configurations  
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;ListDLLs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Command-line tool that reports all the DLLs loaded into the system’s processes
+&lt;/li&gt;
+&lt;li&gt;Can also be used to only list DLLs loaded in specific processes or to list a process with a particular loaded DLL  
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sysinternals Tools Overview Demo&lt;/h2&gt;
+&lt;video width=&#34;1000&#34; height=&#34;200&#34; controls&gt;
+  &lt;source src=&#34;https://videos-ms.s3.us-east-1.amazonaws.com/SysInternalsVideo.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tool 9: Stegseek</title>
+      <link>http://localhost:1313/projects/sectools/securitytools6/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools6/</guid>
+      <description>&lt;h2&gt;Initial Problem&lt;/h2&gt;
+&lt;p&gt;On the previous week, I attempted to use a tool called Stegsolve to extract hidden messages embedded with the use of Steghide but was unable to do so as the tool is geared towards visual steganalysis rather than retrieving embedded data. This week I will be using Stegseek to extract that same embedded data.&lt;/p&gt;
+&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;Stegseek is a brute-forcing and steghide cracker security tool that can be used to extract hidden data from files. It relies on wordlists to perform dictionary attacks on passphrases used to hide the data. Compared to Stegcracker and Stegbrute, it has the fastest performance when searching through wordlists containing millions of words.&lt;/p&gt;</description>
       
     </item>
     
@@ -65,11 +86,9 @@
       
       <guid>http://localhost:1313/projects/sectools/securitytools5/</guid>
       <description>&lt;h2&gt;What is it?&lt;/h2&gt;
-&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
-&lt;h2&gt;What problem does it solve?&lt;/h2&gt;
-&lt;h2&gt;What data is needed?&lt;/h2&gt;
-&lt;h2&gt;How do you test it?&lt;/h2&gt;
-&lt;h2&gt;References&lt;/h2&gt;</description>
+&lt;p&gt;Stegsolve is a Java-based graphical tool designed to perform steganalysis. This particular tool detects and extracts hidden contents from image files through visual analysis and manipulation. Unlike steganography, steganalysis is the art of detecting hidden data within various types of digital media.&lt;/p&gt;
+&lt;h2&gt;What Problems does it Solve?&lt;/h2&gt;
+&lt;p&gt;Stegsolve aids users in identifying if an image file contains hidden information and using various techniques to manipulate and visualize data in order to extract the hidden contents visually embedded within the image. The keyword is “visually” as it is important to note that this security tool is primarily used for visual steganalysis rather than extracting actual embedded data that can’t be extracted visually.&lt;/p&gt;</description>
       
     </item>
     
@@ -80,11 +99,9 @@
       
       <guid>http://localhost:1313/projects/sectools/securitytools4/</guid>
       <description>&lt;h2&gt;What is it?&lt;/h2&gt;
-&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
-&lt;h2&gt;What problem does it solve?&lt;/h2&gt;
-&lt;h2&gt;What data is needed?&lt;/h2&gt;
-&lt;h2&gt;How do you test it?&lt;/h2&gt;
-&lt;h2&gt;References&lt;/h2&gt;</description>
+&lt;p&gt;Exiftool is a command-line application and platform-independent Perl library used for reading, writing, and editing metadata from a variety of different file formats.&lt;/p&gt;
+&lt;h2&gt;What Problems Does it Solve?&lt;/h2&gt;
+&lt;p&gt;Exiftool is reliable in managing metadata in files and can be used to verify and sanitize the file’s metadata. This ensures that the metadata is free of malicious code or vulnerable data. This security tool can also be used to remove sensitive information by stripping certain data contents from files. Some metadata contain sensitive information such as user data or even GPS coordinates and can pose privacy risks. This security tool is especially crucial in the field of digital forensics to determine the origin of the media file and uncover concealed data that could be of relevance to an investigation.&lt;/p&gt;</description>
       
     </item>
     
@@ -95,11 +112,11 @@
       
       <guid>http://localhost:1313/projects/sectools/securitytools3/</guid>
       <description>&lt;h2&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;Steghide is a steganography program that allows data to be hidden in image and audio files. Steganography is the practice of concealing data within various types of files.&lt;/p&gt;
 &lt;h2&gt;Where did you get if from?&lt;/h2&gt;
+&lt;p&gt;I installed Steghide on Linux with the command ‘sudo apt-get install steghide -y’.&lt;/p&gt;
 &lt;h2&gt;What problem does it solve?&lt;/h2&gt;
-&lt;h2&gt;What data is needed?&lt;/h2&gt;
-&lt;h2&gt;How do you test it?&lt;/h2&gt;
-&lt;h2&gt;References&lt;/h2&gt;</description>
+&lt;p&gt;Cryptography is a practice that is used to encrypt messages to be unreadable to unauthorized users. Unlike cryptography, steganography hides the message’s existence by embedding it within another text, image, audio, or video file. The main difference being that the unreadable data is still present on the cryptography side, while steganography hides the very existence of the message. This is useful for confidential communication, avoiding detection, and digital watermarking which allows the author to copyright information without needing to explicitly modify the media.&lt;/p&gt;</description>
       
     </item>
     
@@ -111,7 +128,7 @@
       <guid>http://localhost:1313/projects/sectools/securitytools2/</guid>
       <description>&lt;h2&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;SQLMap is a python-based penetration testing tool that automates the detecting and exploiting process of potential SQL injection vulnerabilities found in web applications. It is also open source and able to take over database servers. Some of the different types of automated SQL injections attacks that can be deployed include error based, time delay, stacked queries, Boolean based, and union based attacks.&lt;/p&gt;
-&lt;h2&gt;Where did you get if from?&lt;/h2&gt;
+&lt;h2&gt;Where did you get it from?&lt;/h2&gt;
 &lt;p&gt;Found it in my collection of security tools provided by Kali Linux and it was located in the Database Assessment category. To get it manually, you can install it from this GitHub Repository: &lt;a
   href=&#34;https://github.com/sqlmapproject/sqlmap&#34;
     target=&#34;_blank&#34;
@@ -131,16 +148,6 @@ used for analyzing malware and penetration testing and is a valuable tool for us
 them to filter DNS queries, redirect traffic, and poison DNS servers. DNSChef also allows users
 to create custom DNS responses based off a set of configured rules which can be utilized to
 simulate attacks to test the effectiveness of other security tools.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Security Tools 1-3: Steganography</title>
-      <link>http://localhost:1313/projects/sectools/securitytools8/</link>
-      <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/sectools/securitytools8/</guid>
-      <description></description>
       
     </item>
     
@@ -184,6 +191,28 @@ simulate attacks to test the effectiveness of other security tools.&lt;/p&gt;</d
         &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car4&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Table of Available Cars&lt;/p&gt;&lt;/div&gt;
         &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car5&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Users Table + Profile Dropdown&lt;/p&gt;&lt;/div&gt;
         &lt;div class=&#34;slider-caption&#34; id=&#34;caption-Car6&#34; style=&#34;display: none;&#34;&gt;&lt;p&gt;Form to Register Vehicle into Table&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Security Tools 1-3: Image &amp; Audio Steganography</title>
+      <link>http://localhost:1313/projects/sectools/securitytools8/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/sectools/securitytools8/</guid>
+      <description>&lt;p&gt;These videos show the first time I experimented with different security tools in my undergraduate years.&lt;/p&gt;
+&lt;h2&gt;Image Steganography&lt;/h2&gt;
+&lt;video width=&#34;1000&#34; height=&#34;800&#34; controls&gt;
+  &lt;source src=&#34;https://videos-ms.s3.us-east-1.amazonaws.com/ImageSteg1.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+&lt;video width=&#34;1000&#34; height=&#34;800&#34; controls style=&#34;margin-top:1rem&#34;&gt;
+  &lt;source src=&#34;https://videos-ms.s3.us-east-1.amazonaws.com/ImageSteg2.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;h2&gt;Audio Steganography&lt;/h2&gt;
+&lt;video width=&#34;1000&#34; height=&#34;200&#34; controls&gt;
+  &lt;source src=&#34;https://videos-ms.s3.us-east-1.amazonaws.com/AudioSteg.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;</description>
       
     </item>
     

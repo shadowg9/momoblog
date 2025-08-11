@@ -22,13 +22,13 @@ It was located in my Kali Linux, where it has a collection of different security
 was located in the Sniffing & Spoofing category. To get it on Windows, you can install it from
 this GitHub Repository: https://github.com/iphelix/dnschef. 
 
-<h2>What problem does it solve?</h2>
+<h2>What Problems Does it Solve?</h2>
 
 This security tool can be used for a variety of different use cases such as bypassing network
 restrictions, spoofing DNS attacks, and redirecting malware DNS queries to a safe environment
 for further analysis. 
 
-<h2>What data is needed?</h2>
+<h2>What Data is Needed?</h2>
 
 DNS Spoofing Attack
 <ul>
@@ -36,20 +36,12 @@ DNS Spoofing Attack
 <li>IP Address of Machine with DNSChef</li>
 </ul>
 
-<h2>How do you test it?</h2>
+<h2>How do you Test It?</h2>
 
 DNS Spoofing Attack <span style="color: green;"><i>Success</i></span>
 
 I used Kali Linux VM (KVM) and Windows 10 VM (WVM) to test out DNS spoofing. I decided
-to choose http://www.example.com as my target site. In KVM, I opened up DNSChef and ran
-the command, ‘dnschef --fakedomains=example.com --fakeip=192.168.217.133 --
-interface=192.168.217.133’. This command configures DNSChef to spoof DNS responses for
-the example.com domain and return the IP address 192.168.217.133 (KVM’s IPv4) each time the
-domain is requested. While this was running, I opened my WVM and configured my adapter
-options by going into the Ethernet’s properties and having the TCP/IPv4 use the KVM’s IP
-address as its preferred DNS server. The reason this was done was to ensure that all DNS queries
-was sent from the WVM to DNSChef and to simulate the spoofing event to understand how it
-would look in the terminal. 
+to choose http://www.example.com as my target site. In KVM, I opened up DNSChef and ran the command, ‘dnschef --fakedomains=example.com --fakeip=192.168.217.133 -- interface=192.168.217.133’. This command configures DNSChef to spoof DNS responses for the example.com domain and return the IP address 192.168.217.133 (KVM’s IPv4) each time the domain is requested. While this was running, I opened my WVM and configured my adapter options by going into the Ethernet’s properties and having the TCP/IPv4 use the KVM’s IP address as its preferred DNS server. The reason this was done was to ensure that all DNS queries was sent from the WVM to DNSChef and to simulate the spoofing event to understand how it would look in the terminal. 
 
 Before (Windows VM)
 
