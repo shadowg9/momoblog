@@ -74,7 +74,7 @@ weight = 4
 
 [[main]]
 name = "Resume"
-url = "https://resume-ms.s3.amazonaws.com/Sajjad_Mohammed+-+Resume.pdf"
+url = "https://resume-ms.s3.us-east-1.amazonaws.com/Sajjad_Mohammed+-+Resume.pdf"
 weight = 5
 
 [[main]]
