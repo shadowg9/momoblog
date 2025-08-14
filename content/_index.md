@@ -21,7 +21,7 @@
   <div class="trait-content">
 I have a far-reaching understanding for the world of technology. 
 <ol> 
-<li>With programming languages such as Java, C#, Python, HTML/CSS/JS, MySQL, MongoDB, and Linux. </li>
+<li>With programming and scripting languages such as Java, C#, Python, HTML/CSS/JS, and database technologies like MySQL and MongoDB, as well as experience in Linux-based environments including Kali, Ubuntu, and Git Bash.</li>
 <li>Familiarity with frameworks such as SpringBoot, .NET, and React. </li> 
 <li>Software tools such Github, AWS Cloud, and Wireshark. </li> 
 <li>IDE tools such as VS Code, Visual Studio, Eclipse, and Intellij. </li> <li>Cybersecurity insights such as cryptography, SOC analysis, and secure software design.</li> <li>Experience with methodologies such as Agile, Scrum, and Waterfall.</li> 
