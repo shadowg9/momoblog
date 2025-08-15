@@ -55,7 +55,7 @@ These wide array of technical skills provides me a diverse understanding into th
 <div class="trait-box" onclick="toggleTrait(this)">
   <div class="trait-header">Communication</div>
   <div class="trait-content">
-  Communication: I possess the ability to convey technical jargon to the layman in a fluent, digestible manner, as well as incorporate the nomenclature from fields concerning cloud, software development, and cyber security and relay accurate information to more knowledgeable programmers.  
+  I possess the ability to convey technical jargon to the layman in a fluent, digestible manner, as well as incorporate the nomenclature from fields concerning cloud, software development, and cyber security and relay accurate information to more knowledgeable programmers.  
     </div>
 </div> 
 
