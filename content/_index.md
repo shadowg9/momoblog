@@ -66,13 +66,13 @@ I currently possess a Master’s degree in Cybersecurity, a Bachelor’s in Comp
   </div>
 </div> 
 
-<h2>CONTACT</h2>
+<!-- <h2>CONTACT</h2>
 <form method="post" action="https://formsubmit.co/mohammedsajjad1017@gmail.com">
 <input name="name" type="text" class="feedback-input" placeholder="Name" />   
 <input name="email" type="text" class="feedback-input" placeholder="Email" />
 <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
 <input type="submit" value="SUBMIT"/>
-</form>
+</form> -->
 
 
 
