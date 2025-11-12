@@ -62,7 +62,7 @@ These wide array of technical skills provides me a diverse understanding into th
 <div class="trait-box" onclick="toggleTrait(this)">
   <div class="trait-header">Conclusion</div>
   <div class="trait-content">
-I currently possess a Master’s degree in Cybersecurity, a Bachelor’s in Computer Information Systems, a certification for AWS Cloud Practitioner, and am working towards acquiring a Security+ Certification. With my academic background, knowledge acquisitions, and personal projects, I have built a comprehensive technical foundation in secure software development and express a steadfast conviction that aligns with the organization’s commitment to technological excellence and demonstrating ethical behavior and integrity to uphold the company’s reputation and trust of the clients. 
+I currently possess a Master’s degree in Cybersecurity, a Bachelor’s in Computer Information Systems, a certification for AWS Cloud Practitioner and Security+ 701, and am working towards acquiring an AWS Solutions Architect, NET+, and A+ Certification. With my academic background, knowledge acquisitions, and personal projects, I have built a comprehensive technical foundation in secure software development and express a steadfast conviction that aligns with the organization’s commitment to technological excellence and demonstrating ethical behavior and integrity to uphold the company’s reputation and trust of the clients. 
   </div>
 </div> 
 
