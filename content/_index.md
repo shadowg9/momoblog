@@ -74,7 +74,12 @@ I currently possess a Master’s degree in Cybersecurity, a Bachelor’s in Comp
 <input type="submit" value="SUBMIT"/>
 </form> -->
 
-
+<!-- powerbi
+cuckoo malware sandbox
+social engineering toolkit
+burpsuite 
+attack mitre
+voice tool essay-->
 
  
  
