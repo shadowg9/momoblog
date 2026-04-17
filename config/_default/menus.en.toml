@@ -35,18 +35,13 @@ url = "/securitytools.md"
 weight = 2
 
 [[main]]
-name = "Secure E-Commerce Web Application"
+name = "AWS Labs"
 parent = "Projects"
-pageRef = "/projects/ecommerce/_index.md"
-url = "/projects/ecommerce/_index.md"
+pageRef = "projects/awslabs/_index.md"
+url = "/_index.md"
 weight = 2
 
-[[main]]
-name = "Scalable Data Lakehouse Pipeline"
-parent = "Projects"
-pageRef = "/projects/datapipeline/_index.md"
-url = "/projects/datapipeline/_index.md"
-weight = 2
+
 
 [[main]]
 name = "Certifications"
