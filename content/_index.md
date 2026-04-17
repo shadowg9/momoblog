@@ -79,6 +79,8 @@ cuckoo malware sandbox
 social engineering toolkit
 burpsuite 
 attack mitre
+Secure E-Commerce Web Application
+Scalable Data Lakehouse Pipeline
 voice tool essay-->
 
  
