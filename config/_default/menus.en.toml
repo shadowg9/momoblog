@@ -41,6 +41,13 @@ pageRef = "projects/awslabs/_index.md"
 url = "/_index.md"
 weight = 2
 
+[[main]]
+name = "Cybersecurity Homelab"
+parent = "Projects"
+pageRef = "projects/homelab/_index.md"
+url = "/_index.md"
+weight = 2
+
 
 
 [[main]]
