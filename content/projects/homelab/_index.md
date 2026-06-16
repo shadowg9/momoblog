@@ -1,4 +1,5 @@
 ---
+date = '2026-06-18'
 title: "Cybersecurity Homelab"
 ---
 
@@ -26,7 +27,9 @@ In addition in further developing my technical prowess, this project will serve 
 
 <h3>Creating Active Directory Server</h3> 
 
-I will be creating a dedicated Microsoft Active Directory Domain Controller Server. An Active Directory servive is developed by Microsoft that nmanages and organizes resources in a network. It acts as a centralized database to authenticate and authorize users and devices. The key components include authentiication where user identity is verified using credentials, authorization wher network resources are granted or denied access based on permissions, and centralized management where control over users, computers, and other resources are centralized. 
+I will be creating a dedicated Microsoft Active Directory Domain Controller Server. An Active Directory server is developed by Microsoft that manages and organizes resources in a network. It acts as a centralized database to authenticate and authorize users and devices. The key components include authentiication where user identity is verified using credentials, authorization where network resources are granted or denied access based on permissions, and centralized management where control over users, computers, and other resources are centralized. 
+
+
 
 <h2>Creating a Vulnerable Environment & Detections</h2>
 
