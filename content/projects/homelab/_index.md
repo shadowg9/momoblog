@@ -6,6 +6,8 @@ Welcome to my VMWare Homelab documentation. Below you’ll find instructions on 
 
 <h2>Introduction</h2> 
 
+I will create a Windows-native simulated enterprise environment that builds softare for consumers. This will be a mock organization named ProjectMomo that is looking to eventually grow its SOC and TDR capabilities, building a dedicated Security Analysis Lab, and simulating various cyber-attacks. 
+
 <h3>Why Simulate a Business Network?</h3>
 
 A core objective of this project is to simulate a realistic business network environment where my technical skills can be cultivated and applied in a virtual setting that mirrors a real-world enterprise infrastructure. 
@@ -14,7 +16,11 @@ In building and securing a simulated organizational network, I will have gained 
 
 Doing this lab will also generate opportunities for me to practice incident response by investigating and mitigating simulated threats inlcuding, but not limited to, suspicious network activity, unauthorized access attempts, and malware infections. 
 
-In addition in further developing my technical prowess, this project will serve to demonstrate my ability to design, implement, monitor, and secure a business network. This will allow me to showcare practical cybersecurity competencies to potential employers and put an emphasis on my ongoing curiosity in continuing to accrue knowledge within the tech sector. 
+In addition in further developing my technical prowess, this project will serve to demonstrate my ability to design, implement, monitor, and secure a business network. This will allow me to showcare practical cybersecurity competencies to potential employers and put an emphasis on my ongoing curiosity in continuing to accrue knowledge within the tech sector.
+
+<h3>Network Architecture Diagram</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/CSHomelab.png></img>
 
 <h2>Building an Enterprise Network</h2>
 
