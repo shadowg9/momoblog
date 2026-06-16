@@ -1,6 +1,7 @@
 +++
 date = '2026-06-15'
 title: 'Cybersecurity Homelab'
+draft = false
 tags = ['projects']
 categories = ['updates']
 layout = "single"
