@@ -1,5 +1,5 @@
 +++
-date = "2026-06-15"
+date = "2026-06-21"
 title = "Cybersecurity Homelab"
 draft = false
 tags = ['projects']
