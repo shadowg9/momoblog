@@ -190,6 +190,8 @@ Note: I actually had to use it not too long after because I decided to apply the
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win7.png></img>
 
+<h4>Changing Workgroup Name</h4> 
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win8.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win9.png></img>
@@ -201,6 +203,8 @@ Note: I actually had to use it not too long after because I decided to apply the
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win12.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win13.png></img>
+
+<h4>Snapshot</h4> 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win14.png></img>
 
