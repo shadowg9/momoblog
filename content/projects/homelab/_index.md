@@ -7,7 +7,7 @@ categories = ['updates']
 layout = "single"
 +++
 
-Welcome to my VMWare Homelab documentation. Below you’ll find instructions on how to complete the given objectives in regards to how I was able to create my own personal Homelab and how you can too if you follow the steps I posted. 
+Welcome to my VMware Homelab documentation. Below you’ll find instructions on how to complete the given objectives in regards to how I was able to create my own personal Homelab and how you can too if you follow the steps I posted. 
 
 <h2>Introduction</h2> 
 
@@ -21,7 +21,7 @@ In building and securing a simulated organizational network, I will have gained 
 
 Doing this lab will also generate opportunities for me to practice incident response by investigating and mitigating simulated threats inlcuding, but not limited to, suspicious network activity, unauthorized access attempts, and malware infections. 
 
-In addition in further developing my technical prowess, this project will serve to demonstrate my ability to design, implement, monitor, and secure a business network. This will allow me to showcare practical cybersecurity competencies to potential employers and put an emphasis on my ongoing curiosity in continuing to accrue knowledge within the tech sector.
+In addition in further developing my technical prowess, this project will serve to demonstrate my ability to design, implement, monitor, and secure a business network. This will allow me to showcase practical cybersecurity competencies to potential employers and put an emphasis on my ongoing curiosity in continuing to accrue knowledge within the tech sector.
 
 <h3>Network Architecture Diagram</h3>
 
@@ -31,11 +31,11 @@ In addition in further developing my technical prowess, this project will serve 
 
 <h3>Creating Active Directory Server</h3> 
 
-I will be creating a dedicated Microsoft Active Directory Domain Controller Server. An Active Directory server is developed by Microsoft that manages and organizes resources in a network. It acts as a centralized database to authenticate and authorize users and devices. The key components include authentiication where user identity is verified using credentials, authorization where network resources are granted or denied access based on permissions, and centralized management where control over users, computers, and other resources are centralized. 
+I will be creating a dedicated Microsoft Active Directory Domain Controller Server. An Active Directory server is developed by Microsoft that manages and organizes resources in a network. It acts as a centralized database to authenticate and authorize users and devices. The key components include authentication where user identity is verified using credentials, authorization where network resources are granted or denied access based on permissions, and centralized management where control over users, computers, and other resources are centralized. 
 
 <h4>Step 1: Creating DC Server VM</h4> 
 
-Choose Microsoft Windows guest operating system and Windows Server 2022 for VMware and 
+Choose Microsoft Windows guest operating system and Windows Server 2022 for VMware.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step1.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step2.png></img> 
