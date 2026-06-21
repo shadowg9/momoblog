@@ -146,20 +146,24 @@ Reserved 100 IP Address space for the scope distribution.
 
 <h4>Step 8: Adding User Accounts in Active Directory</h4> 
 
+To add users, go to 'Tools' in top right of Server Manager Dashboard and select 'Active Directory Users and Computers'.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16.png></img>
 
+Right Click Users > New > User.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part2.png></img>
 
+Added in users for John Doe and Jane Doe for Windows and Ubuntu Virtual Machines respectively. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part3.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part4.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part6.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step17.png></img>
 
+Snapshot to preserve configurations. 
+Note: I actually had to use it not too long after because I decided to apply the security updates on my Windows 2025 server and it locked me out of my own account. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step18.png></img>
 
 <img src=></img>
