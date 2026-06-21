@@ -90,6 +90,7 @@ Select 'Add Roles and features' below 'Configure this local server.'
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part3.png></img>
 
+Just making sure the IP addresses are correct. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part4.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part5.png></img>
@@ -100,10 +101,9 @@ Select 'Add Roles and features' below 'Configure this local server.'
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part8.png></img>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step13.png></img>
 
 <h4>Step 6</h4> 
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step13.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14.png></img>
 
