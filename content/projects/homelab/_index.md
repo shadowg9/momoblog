@@ -168,7 +168,41 @@ Snapshot to preserve configurations.
 Note: I actually had to use it not too long after because I decided to apply the security updates on my Windows 2025 server and it locked me out of my own account. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step18.png></img>
 
-<h3>Provisioning and Setting up Windows 11 Enterprise</h3> 
+<h3>Provisioning and Setting up Windows 11 Enterprise</h3>
+
+<h4>Setting up Windows VM</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win4.png></img>
+
+<h3>Adding Windows 11 Machine to Active Directory Domain</h3>
+
+<h4>Setting up Static IP Address</h4> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win10.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win11.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win12.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Win14.png></img>
 
 <h3>Provisioning and Setting up Ubuntu Desktop</h3>
 
