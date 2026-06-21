@@ -61,6 +61,8 @@ I will be creating a dedicated Microsoft Active Directory Domain Controller Serv
 
 <h4>Step 12</h4> 
 
+<h3>Provisioning and Setting Up Windows 11 Enterprise</h3> 
+
 <h2>Creating a Vulnerable Environment & Detections</h2>
 
 <h2>Cyber Attack - Initial Access to Breached</h2>
