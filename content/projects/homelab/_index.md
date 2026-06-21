@@ -125,12 +125,17 @@ Using nslookup on my DC name to ensure the IP address is mapped properly.
 
 <h4>Step 7: Setting up DHCP</h4> 
 
+DHCP allows the DC to assign IP addresses to connected workstations, servers, and other networking devices. 
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15.png></img>
 
+After going to 'DHCP Manager', navigate to 'IPv4' and select 'New Scope'.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part2.png></img>
 
+For my scope name, I went with 'project-momo-scope'.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part3.png></img>
 
+Reserved 100 IP Address space for the scope distribution. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part4.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part5.png></img>
