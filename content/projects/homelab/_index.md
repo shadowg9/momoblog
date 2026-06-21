@@ -60,7 +60,7 @@ The Server Manager Dashboard once I loaded in the DC VM.
 
 <h4>Step 3: Optional Tweaks</h4> 
 
-Since the default timer for the Windows Server 2025 to sign out is 5 minutes, I toggled the screen timeout to 'Never' as it can become intrusive and inconvenient for my workflow when going back back and forth between VMs. 
+Since the default timer for the Windows Server 2025 to sign out is 10 minutes, I toggled the screen timeout to 'Never' as it can become intrusive and inconvenient for my workflow when going back back and forth between VMs. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step9.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part1.png></img>
