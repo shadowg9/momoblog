@@ -70,7 +70,7 @@ Another vexxing issue is the need to click 'Ctrl+Alt+Delete' every time before y
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part3.png></img>
 
-<h4>Step 4</h4>  
+<h4>Step 4: Assigining Static IP Addresses</h4>  
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part1.png></img>
 
