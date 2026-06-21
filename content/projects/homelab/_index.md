@@ -35,6 +35,7 @@ I will be creating a dedicated Microsoft Active Directory Domain Controller Serv
 
 <h4>Step 1: Creating DC Server VM</h4> 
 
+Choose Microsoft Windows guest operating system and Windows Server 2022 for VMware and 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step1.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step2.png></img> 
@@ -45,7 +46,6 @@ I will be creating a dedicated Microsoft Active Directory Domain Controller Serv
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step4.png></img>
 
-Choose Microsoft Windows guest operating system and Windows Server 2022 for VMware and 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step5.png></img>
 
 Select Windows Server 2025 Standard Evaluation (Desktop Experience) to have the GUI installed.
