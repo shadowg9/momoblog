@@ -40,6 +40,7 @@ Choose Microsoft Windows guest operating system and Windows Server 2022 for VMwa
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step2.png></img> 
 
+For this virtual machine, use the iso file: Windows Server 2025.iso. It can be found <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025">here</a>. It is imperative to ensure that the 'Connected' and 'Connect at power on' boxes are checked underneath the Device Status group so the virtual machine can boot without issues. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step3.png></img>
 
 <h4>Step 2: Setting Up DC VM</h4> 
