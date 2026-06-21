@@ -160,9 +160,10 @@ Added in users for John Doe and Jane Doe for Windows and Ubuntu Virtual Machines
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part6.png></img>
 
+Will return back to adding in other workstations as I progress through the Homelab. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step17.png></img>
 
-Snapshot to preserve configurations. 
+Snapshot to preserve configurations. <br> 
 Note: I actually had to use it not too long after because I decided to apply the security updates on my Windows 2025 server and it locked me out of my own account. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step18.png></img>
 
