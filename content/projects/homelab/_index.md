@@ -78,27 +78,33 @@ Another vexxing issue is the need to click 'Ctrl+Alt+Delete' every time before y
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part3.png></img>
 
+<h4>Step 5</h4>  
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part1.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part2.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part3.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step13.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part2.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part3.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part4.png></img>
 
-<img src=></img>
-
-<h4>Step 5</h4>  
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part5.png></img>
 
 <h4>Step 6</h4> 
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
 
 <h4>Step 7</h4> 
 
