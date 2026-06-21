@@ -139,11 +139,25 @@ Using nslookup on my DC name to ensure the IP address is mapped properly.
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part7.png></img>
 
-<img src=></img>
-
-<img src=></img>
-
 <h4>Step 8</h4> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16Part6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step17.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step18.png></img>
+
+<img src=></img>
 
 <h4>Step 9</h4>  
 
