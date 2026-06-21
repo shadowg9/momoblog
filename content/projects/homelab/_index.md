@@ -99,37 +99,45 @@ Just making sure the IP addresses are correct.
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part7.png></img>
 
+Entered a root domain name, corp.project-momo-dc.com that will be the name assigned to the domain controller.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part8.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step13.png></img>
 
-<h4>Step 6</h4> 
+<h4>Step 6: Setup DNS for Internet Access</h4> 
 
+During the feature installation process, once of the components that was selected was 'DNS'. This is so the Domain Controller handles DNS requests for all connected devices. 
+
+Right click the server in DNS on Server Manager and click 'DNS Manager'.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14.png></img>
 
+Right click the domain and select 'Properties', then go to the 'Forwarders' tab. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part2.png></img>
 
+Click the 'Edit' buttons to add in Google's DNS server address (8.8.8.8) which will allows us to use the internet. What is basically happening if that all DNS requests are being forwarded to Google, which thens routes to the proper web server.  
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part3.png></img>
 
+Testing out the ping command to google's domain to make sure it replies back. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part4.png></img>
 
+Using nslookup on my DC name to ensure the IP address is mapped properly.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part5.png></img>
 
-<h4>Step 7</h4> 
+<h4>Step 7: Setting up DHCP</h4> 
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part2.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part3.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part4.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part5.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part6.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part7.png></img>
 
 <img src=></img>
 
