@@ -33,7 +33,29 @@ In addition in further developing my technical prowess, this project will serve 
 
 I will be creating a dedicated Microsoft Active Directory Domain Controller Server. An Active Directory server is developed by Microsoft that manages and organizes resources in a network. It acts as a centralized database to authenticate and authorize users and devices. The key components include authentiication where user identity is verified using credentials, authorization where network resources are granted or denied access based on permissions, and centralized management where control over users, computers, and other resources are centralized. 
 
+<h4>Step 1</h4> 
 
+<h4>Step 2</h4> 
+
+<h4>Step 3</h4> 
+
+<h4>Step 4</h4>  
+
+<h4>Step 5</h4>  
+
+<h4>Step 6</h4> 
+
+<h4>Step 7</h4> 
+
+<h4>Step 8</h4> 
+
+<h4>Step 9</h4>  
+
+<h4>Step 10</h4> 
+
+<h4>Step 11</h4> 
+
+<h4>Step 12</h4> 
 
 <h2>Creating a Vulnerable Environment & Detections</h2>
 
