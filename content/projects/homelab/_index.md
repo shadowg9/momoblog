@@ -37,9 +37,39 @@ I will be creating a dedicated Microsoft Active Directory Domain Controller Serv
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step1.png></img>
 
-<h4>Step 2</h4> 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step2.png></img>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step3.png></img>
 
+<h4>Step 2: Setting Up DC VM</h4> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part3.png></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
 
 <h4>Step 3</h4> 
 
