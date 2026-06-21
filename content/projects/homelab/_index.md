@@ -72,10 +72,13 @@ Another vexxing issue is the need to click 'Ctrl+Alt+Delete' every time before y
 
 <h4>Step 4: Assigining Static IP Addresses</h4>  
 
+Select 'Change adaper settings'.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part1.png></img>
 
+Once selected, a pop-up window will display computer icon named 'Ethernet'. Right click this icon and select 'Properties'. Select 'Internet Protocol Version 4 (TCP/IPv4)' and select 'Properties'. This is where we can set the virtual device to a static IP address.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part2.png></img>
 
+I set my IP address to '192.178.217.5', my Subnet mask to '255.255.255.0' and my Default gateway to '192.168.217.2'. I could not have done '192.168.217.1' since VMware NAT usually uses .2 as the NAT gateway, while .1 is the host VMnet8 adapter.  
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part3.png></img>
 
 <h4>Step 5</h4>  
