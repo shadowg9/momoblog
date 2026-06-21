@@ -63,6 +63,7 @@ The Server Manager Dashboard once I loaded in the DC VM.
 Since the default timer for the Windows Server 2025 to sign out is 10 minutes, I toggled the screen timeout to 'Never' as it can become intrusive and inconvenient for my workflow when going back back and forth between VMs. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step9.png></img>
 
+Another vexxing issue is the need to click 'Ctrl+Alt+Delete' every time before you login the VM. This would not be too much of an issue except the fact that it would prompt a menu to shut down your local machine rather than unlocking the VM. Despite, VMware graciously having a button to bypass the overlapping key commands, it is still more convenient to just disable the bottleneck altogether. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part1.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part2.png></img>
