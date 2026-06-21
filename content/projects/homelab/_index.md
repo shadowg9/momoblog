@@ -81,13 +81,19 @@ Once selected, a pop-up window will display computer icon named 'Ethernet'. Righ
 I set my IP address to '192.178.217.5', my Subnet mask to '255.255.255.0' and my Default gateway to '192.168.217.2'. I could not have done '192.168.217.1' since VMware NAT usually uses .2 as the NAT gateway, while .1 is the host VMnet8 adapter.  
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part3.png></img>
 
-<h4>Step 5</h4>  
+<h4>Step 5: Promoting Active Directory to a Domain Controller</h4>  
 
+Select 'Add Roles and features' below 'Configure this local server.'
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part1.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part2.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part4.png></img>
+
+
+<h4>Step 6</h4> 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step13.png></img>
 
@@ -101,15 +107,25 @@ I set my IP address to '192.178.217.5', my Subnet mask to '255.255.255.0' and my
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part5.png></img>
 
-<h4>Step 6</h4> 
-
-<img src=></img>
-
-<img src=></img>
-
-<img src=></img>
-
 <h4>Step 7</h4> 
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
 
 <h4>Step 8</h4> 
 
