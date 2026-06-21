@@ -92,6 +92,14 @@ Select 'Add Roles and features' below 'Configure this local server.'
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part4.png></img>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part8.png></img>
+
 
 <h4>Step 6</h4> 
 
