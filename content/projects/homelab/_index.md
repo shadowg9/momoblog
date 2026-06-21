@@ -168,22 +168,36 @@ Snapshot to preserve configurations.
 Note: I actually had to use it not too long after because I decided to apply the security updates on my Windows 2025 server and it locked me out of my own account. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step18.png></img>
 
-<img src=></img>
+<h3>Provisioning and Setting up Windows 11 Enterprise</h3> 
 
-<h4>Step 9</h4>  
+<h3>Provisioning and Setting up Ubuntu Desktop</h3>
 
-<h4>Step 10</h4> 
+<h3>Provisioning and Setting up CORP-SVR</h3>
 
-<h4>Step 11</h4> 
+<h3>Setting up MailHog</h3>
 
-<h4>Step 12</h4> 
+<h3>Provisioning and Setting up Security Onion</h3>
 
-<h3>Provisioning and Setting Up Windows 11 Enterprise</h3> 
+<h3>Provisioning and Setting up Ubuntu's Security Server</h3>
+
+<h3>Setting up Wazuh</h3>
 
 <h2>Creating a Vulnerable Environment & Detections</h2>
 
+<h3>Setting up Detections & Alerts</h3>
+
 <h2>Cyber Attack - Initial Access to Breached</h2>
 
+<h3>Provision Attacker Machine (Kali Linux)</h3>
+
+<h3>Reconnaissance - Initil Access</h3>
+
+<h3>Lateral Movement - Privilege Escalation</h3>
+
+<h3>Data Exfiltration - Persistence</h3>
+
 <h2>Catching the Attacker</h2>
+
+<h3>Investigation & Defense</h3>
 
 <h2>Project Takeaway</h2> 
