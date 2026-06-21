@@ -47,9 +47,9 @@ For this virtual machine, use the iso file: Windows Server 2025.iso. It can be f
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step4.png></img>
 
+Select Windows Server 2025 Standard Evaluation (Desktop Experience) to have the GUI installed.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step5.png></img>
 
-Select Windows Server 2025 Standard Evaluation (Desktop Experience) to have the GUI installed.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step6.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step7.png></img>
