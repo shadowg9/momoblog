@@ -55,25 +55,39 @@ I will be creating a dedicated Microsoft Active Directory Domain Controller Serv
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step9.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10.png></img>
+<h4>Step 3</h4> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part1.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part2.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part3.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part1.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part2.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part3.png></img>
 
-<img src=></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part1.png></img>
 
-<img src=></img>
-
-<h4>Step 3</h4> 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part2.png></img>
 
 <h4>Step 4</h4>  
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Step12Part3.png></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
+
+<img src=></img>
 
 <h4>Step 5</h4>  
 
