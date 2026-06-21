@@ -144,7 +144,7 @@ Reserved 100 IP Address space for the scope distribution.
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step15Part7.png></img>
 
-<h4>Step 8</h4> 
+<h4>Step 8: Adding User Accounts in Active Directory</h4> 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step16.png></img>
 
