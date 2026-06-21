@@ -55,11 +55,12 @@ Select Windows Server 2025 Standard Evaluation (Desktop Experience) to have the 
 Created 3 different Partitions to organize and separate date. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step7.png></img>
 
+The Server Manager Dashboard once I loaded in the DC VM. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step8.png></img>
 
+<h4>Step 3: Optional Tweaks</h4> 
 
-<h4>Step 3: Optional Tweaks/h4> 
-
+Since the default timer for the Windows Server 2025 to sign out is 5 minutes, I toggled the screen timeout to 'Never' as it can become intrusive and inconvenient for my workflow when going back back and forth between VMs. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step9.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step10Part1.png></img>
