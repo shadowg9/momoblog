@@ -52,6 +52,7 @@ Select Windows Server 2025 Standard Evaluation (Desktop Experience) to have the 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step6.png></img>
 
+Created 3 different Partitions to organize and separate date. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step7.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step8.png></img>
