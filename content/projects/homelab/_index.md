@@ -188,6 +188,7 @@ Note: I actually had to use it not too long after because I decided to apply the
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win6.png></img>
 
+Connected Windows Workstation to DC IP Address (Preferred DNS Server) 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win7.png></img>
 
 <h4>Changing Workgroup Name</h4> 
