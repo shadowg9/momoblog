@@ -220,6 +220,7 @@ Connected Windows Workstation to DC IP Address (Preferred DNS Server)
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux3.png></img>
 
+Since this is a lab environment, I set it to login automatically to save time. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux4.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux5.png></img>
@@ -228,6 +229,7 @@ Connected Windows Workstation to DC IP Address (Preferred DNS Server)
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux6.png></img>
 
+Changing the ianctivity period from 5 minutes to Never for the sake of convenience when alternating between different virutal machines. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux7.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux8.png></img>
