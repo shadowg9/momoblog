@@ -232,9 +232,11 @@ Since this is a lab environment, I set it to login automatically to save time.
 Changing the ianctivity period from 5 minutes to Never for the sake of convenience when alternating between different virutal machines. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux7.png></img>
 
+<h4>Assigning Static IP address</h4>
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux8.png></img>
 
-<h4>Pinging</h4>
+<h4>Ensuring the Linux Desktop can reach the Windows Server Domain Controller</h4>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux9.png></img>
 
