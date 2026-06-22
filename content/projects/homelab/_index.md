@@ -174,6 +174,7 @@ Note: I actually had to use it not too long after because I decided to apply the
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win1.png></img>
 
+Iso file can be found <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise" target="_blank">here</a>
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win2.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win3.png></img>
@@ -210,6 +211,8 @@ Connected Windows Workstation to DC IP Address (Preferred DNS Server)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win14.png></img>
 
 <h3>Provisioning and Setting up Ubuntu Desktop</h3>
+
+<h4>Setting up Ubuntu
 
 <h3>Provisioning and Setting up CORP-SVR</h3>
 
