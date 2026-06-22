@@ -246,6 +246,108 @@ Changing the ianctivity period from 5 minutes to Never for the sake of convenien
 
 <h3>Adding Ubuntu Linux Machine to Active Directory Domain</h3>
 
+<h4>SSSD & Realmd</h4>
+
+Since Ubuntu and other Linux-native operating systems in general are not native to the Microsoft ecosystem, there are alternative ways to connect Ubuntu to Active Directory with Realmd and SSSD (System Security Services Daemon).
+
+SSSD is a service on Linux systems that provides a central access point for identity management and authentication. It serves as an intermediary between the Linux system and Active Directory and allows for integration. 
+
+Realmd is a tool that simplifies the process of connecting Linux machines to Active Directory domains by automating the discovery, configuration, and enrollment of Linux systems in Active Directories. This is especially useful for administrators as it manages the complexities of setting up Kerberos, configuring LDAP settings, and enduring proper authentication protocols. 
+
+Something to note is that these third party softwares does not work with Ubuntu 22.04 or Windows Server 2025 (it does work with Windows Server 2022). 
+
+<h4>Samba Winbind</h4>
+
+An alternative method is using Samba Winbind which is a component of the Samba suite that allows Linux systems to authenticate users against AD and integrates it with Windows network environments. 
+
+It is necessary to install third-party libraries or packages in order to connect Linux to a Microsoft Active Directory Ecosystem. This is due to Linux not being native to Microsoft.
+
+<h4>Step 1: Updating System with 'sudo apt update'</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba1.png></img>
+
+<h4>Step 2: Installing the Necessary Dependencies/Packages</h4>
+
+sudo apt -y install winbind libpam-winbind libnss-winbind krb5-config samba-dsdb-modules samba-vfs-modules
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba2.png></img>
+
+Configuring Kerberos Authentication, added 'CORP.PROJECT-MOMO-DC.COM' in all dialogue boxes. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba5.png></img>
+
+<h4>Moving 'smb.conf' file to 'smb.conf.org'</h4>
+
+This is done to replace the contents of 'smb.conf' with our configurations instead. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba6.png></img>
+
+<h4>Replacing Realm and Workgroup</h4>
+
+Creating and opening the 'smb.conf' file with Nano.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba7.png></img> 
+
+Replacing realm and workgroup with the following: 
+     [global]
+       kerberos method = secrets and keytab
+       realm = CORP.PROJECT-MOMO-DC.COM
+       workgroup = CORP
+       security = ads
+       template shell = /bin/bash
+       winbind enum groups = Yes
+       winbind enum users = Yes
+       winbind separator = +
+       idmap config * : rangesize = 1000000
+       idmap config * : range = 1000000-19999999
+       idmap config * : backend = autorid
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba8.png></img> 
+
+Confirming 'passwd' and 'group' blocks have 'winbind' set as value. 
+
+sudo nano /etc/nsswitch.conf
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba9.png></img> 
+
+<h4>Setting Home Directory</h4>
+
+sudo pam-auth-update then navigate down to 'Create home directory on login' and select it with spacebar. Then click 'Enter' to accept changes.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba10.png></img> 
+
+<h4>Changing DNS settings to refer to AD</h4>
+
+sudo nano /etc/resolv.conf
+Add new nameserver above default one for the Domain Controller.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba11.png></img> 
+
+<h4>Joining the domain with Administrator</h4>
+
+Note: Ensure Domain Controller Virtual Machine is on and running. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba12.png></img> 
+
+Restart winbind with 'systemctl restart winbind'
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba13.png></img> 
+
+Get Active Directory services information listing.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba14.png></img> 
+
+List all available users
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba15.png></img> 
+
+Logging in as Janed
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba16.png></img> 
+
+Issuing an id command to view status
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba17.png></img> 
+
+<h4>Verifying that Linux Client has been Connected</h4>
+
+I return back to the Domain Controller virtual machine and go to tools on the Server Manager Dashboard to select 'Active Directory Users and Computers'. Upcon clicking on the Computers folder, I can see the Linux and Windows client which indicates that I have connected the workstations to the Active Directory which is a success! 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba18.png></img> 
+
+<h4>Updated Snapshot</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Samba19.png></img>
+
 <h3>Provisioning and Setting up CORP-SVR</h3>
 
 <h3>Setting up MailHog</h3>
