@@ -350,6 +350,104 @@ I return back to the Domain Controller virtual machine and go to tools on the Se
 
 <h3>Provisioning and Setting up CORP-SVR</h3>
 
+<h4>Creating CORP-SVR</h4>
+
+A dedicated server will be provisioned and created to act as a Jumpbox, which is also referred to as bastion host. These servers acts as an entry-point into an isolated environment and can be used as a security mechanism to restrict access to the internal environment. Without access to the Jumpbox, other services such as DNS, FTP, and email will be inaccessible which means we will not be able to manage, upgrade, or interact with these services. This is intentional by design since the purpose is to restrict access from unauthorized users and minimizing the attack surface. 
+
+For these internal "servers", I will be using containers since additional virtual machines will require more dedicated storage, computer, memory, and other resources. 
+
+Containers are isolated environments that package applications with all its dependencies such as binaries, libraries, and configuration files. They are similar to virtual machines except they run on one operating system, which for my case will be Ubuntu 22.04 CORP-SVR. 
+
+Clone existing Ubuntu Linux VM
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr3.png></img>
+
+<h4>Change Static IP Address</h4>
+
+Everything stayed the same and just changed the IP Address to 192.168.217.108. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr4.png></img>
+
+<h4>Change VM Hostname</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr7.png></img>
+
+<h4>Create New Server Account</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr10.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr11.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr12.png></img>
+
+<h4>Adding CORP-SVR to Active Directory</h4>
+
+Pinging Domain Controller
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr13.png></img>
+
+Connecting CORP-SVR to AD DC DNS Server
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr14.png></img>
+
+Verifying that CORP-SVR has been Connected
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr15.png></img>
+
+<h4>Create New Home Directory Folder</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr16.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr17.png></img>
+
+<h4>Installing Docker Engine by using the apt repository</h4>
+
+Enter URL: https://docs.docker.com/engine/install/ubuntu/
+
+Set up Docker's apt respository
+# Add Docker's official GPG key:
+sudo apt update
+sudo apt install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+sudo apt update
+
+Install the Docker packages
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+Verifying that Docker is running after installation. 
+sudo systemctl status docker
+If not running, start it manually with this command: sudo systemctl start docker
+
+Verify that the installation is successful by running the hello-world image: sudo systemctl start docker
+
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr18.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr19.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr20.png></img>
+
+<h4>Snapshot</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr21.png></img>
+
 <h3>Setting up MailHog</h3>
 
 <h3>Provisioning and Setting up Security Onion</h3>
