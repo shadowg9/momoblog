@@ -212,7 +212,35 @@ Connected Windows Workstation to DC IP Address (Preferred DNS Server)
 
 <h3>Provisioning and Setting up Ubuntu Desktop</h3>
 
-<h4>Setting up Ubuntu
+<h4>Setting up Ubuntu</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux4.png></img>
+
+<h4>Optional Tweaks</h4> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux8.png></img>
+
+<h4>Pinging</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux9.png></img>
+
+<h4>Snapshot</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux10.png></img>
+
+<h3>Adding Ubuntu Linux Machine to Active Directory Domain</h3>
 
 <h3>Provisioning and Setting up CORP-SVR</h3>
 
