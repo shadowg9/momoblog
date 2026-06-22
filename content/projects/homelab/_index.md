@@ -222,9 +222,9 @@ Connected Windows Workstation to DC IP Address (Preferred DNS Server)
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux4.png></img>
 
-<h4>Optional Tweaks</h4> 
-
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux5.png></img>
+
+<h4>Optional Tweaks</h4> 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Linux6.png></img>
 
