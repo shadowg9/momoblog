@@ -475,3 +475,5 @@ Verify that the installation is successful by running the hello-world image: sud
 <h3>Investigation & Defense</h3>
 
 <h2>Project Takeaway</h2> 
+
+<h3>Updated Network Architecture Diagram</h3>
