@@ -485,7 +485,7 @@ Having Message Pop up in MailHog's UI
 
 <h4>Creating An Email Poller Script</h4>
 
-Going back to Linux Client Machine
+Going back to Linux Client Machine, I will simulate an email polling service that will allow me to get new email notifications in the linux client and reporting outgoing emails in the MailHog user interface hosted on the Docker image file withint the Corp-Server virtual machine. 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog13.png></img>
 
