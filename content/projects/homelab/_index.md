@@ -450,6 +450,60 @@ Verify that the installation is successful by running the hello-world image: sud
 
 <h3>Setting up MailHog</h3>
 
+MailHog acts as a fake SMTP server which captures all outgoing emails without actually delvering them to real inboxes. This is an ideal tool for simulating corporate email infrastructure, testing phishing or email-based attacks, debugging applications that can send emails, and avoiding spam filters or external mail services. I will be using MailHog to simulate a business email server which will be used for the phishing exercise. The tool also provides an official docker image ready to use from Docker Hub, which is why we will be using Docker for this homelab. This is the first of many Docker containers that I will be running where will be dedicated to server a different purpose. 
+
+<h4>Creating Mailhog Directory</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog1.png></img>
+
+<h4>Creating Docker Compose File</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog2.png></img>
+
+This will host the configuration file for MailHog.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog3.png></img>
+
+<h4>Running Image File</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog5.png></img>
+
+<h4>Creating Test Email</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog7.png></img>
+
+Ensuring Python Script has executable permissions.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog8.png></img>
+
+Having Message Pop up in MailHog's UI
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog10.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog11.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog12.png></img>
+
+<h4>Creating An Email Poller Script</h4>
+
+Going back to Linux Client Machine
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog15.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog16.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog17.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog18.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog19.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog20.png></img>
+
+
 <h3>Provisioning and Setting up Security Onion</h3>
 
 <h3>Provisioning and Setting up Ubuntu's Security Server</h3>
