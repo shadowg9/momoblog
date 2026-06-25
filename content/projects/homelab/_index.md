@@ -503,8 +503,43 @@ Going back to Linux Client Machine, I will simulate an email polling service tha
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Hog20.png></img>
 
-
 <h3>Provisioning and Setting up Security Onion</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion10.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion11.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion12.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion15.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion16.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion17.png></img>
+
+<h4>Setting Root Password</h4>
 
 <h3>Provisioning and Setting up Ubuntu's Security Server</h3>
 
