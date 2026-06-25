@@ -521,6 +521,7 @@ Going back to Linux Client Machine, I will simulate an email polling service tha
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion8.png></img>
 
+<h4>Accept Default DNS Servers.</h4>
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion9.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion10.png></img>
@@ -535,11 +536,13 @@ Going back to Linux Client Machine, I will simulate an email polling service tha
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion15.png></img>
 
+<h4>Setting Root Password</h4>
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion16.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion17.png></img>
+<h4>Snapshot</h4>
 
-<h4>Setting Root Password</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion17.png></img>
 
 <h3>Provisioning and Setting up Ubuntu's Security Server</h3>
 
