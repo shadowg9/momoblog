@@ -551,7 +551,7 @@ Why exactly provision a whole new dedicated security server when we already crea
 Clone existing Ubuntu Linux VM
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/svr1.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/ufs1.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls1.png></img>
 
 <h4>Change Host Name</h4>
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/ufs2.png></img>
