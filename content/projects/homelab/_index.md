@@ -546,6 +546,78 @@ Going back to Linux Client Machine, I will simulate an email polling service tha
 
 <h3>Provisioning and Setting up Ubuntu's Security Server</h3>
 
+Why exactly provision a whole new dedicated security server when we already created the coporate security server? This is so we can prevent performance degradation, minimize the attack surface by isolating critical processes, and having this new security server simplifies monitoring and management. This provides a single point for handling logs, alerts, and vulnerability data which reduces administrative overhead. 
+
+Clone existing Ubuntu Linux VM
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/svr1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls1.png></img>
+
+<h4>Change Host Name</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls3.png></img>
+
+Reboot machine
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls5.png></img>
+
+<h4>Change Account</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls6.png></img>
+
+Apply sudo privileges to this new sec-user account so commands can be run at the root level.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls8.png></img>
+
+Verifying that I can run sudo command with this new sec-user.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls9.png></img>
+
+<h4>Connect to Active Directory</h4>
+
+Assign Static IP Address
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls10.png></img>
+
+Veriyfing that I can ping the DC's dns server.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls11.png></img>
+
+Creating New User Account in Active Directory
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls12.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls15.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls16.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls17.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls18.png></img>
+
+Clearing winbind cache by restarting the service & Connecting Ubuntu Security Server to Active Directory Domain Controller Server. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls19.png></img>
+
+Viewing New Account
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls20.png></img>
+
+Creating new home directory. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls21.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls22.png></img>
+
+Veriyfing that new user is in corp domain.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls23.png></img>
+
+Veriyfing that new workstation is in corp domain.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls25.png></img>
+
+<h4>Connect to Active Directory</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/uls23.png></img>
+
 <h3>Setting up Wazuh</h3>
 
 <h2>Creating a Vulnerable Environment & Detections</h2>
