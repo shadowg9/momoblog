@@ -671,7 +671,27 @@ Wazuh Dashboard
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz12.png></img>
 
+
+<h4>Deploying Wazuh Agents</h4>
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz15.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz16.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz17.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz18.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz19.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz20.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz21.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz22.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz14.png></img>
 
