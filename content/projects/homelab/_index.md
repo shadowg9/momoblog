@@ -641,10 +641,15 @@ Increasing CPU from 1 to 2
 Increasing RAM from 2048 MB to 4096 MB for Wazuh
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz2.png></img>
 
+<h4>Setting up Wazuh Indexer + Server</h4>
+
+Signing into sec-user@linux-server
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz3.png></img>
 
+Installing cURL
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz4.png></img>
 
+Starting Wazuh Installation Wizard (note: the -i ignores minimum system requirements)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz6.png></img>
