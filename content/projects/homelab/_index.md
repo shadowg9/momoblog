@@ -646,7 +646,7 @@ Increasing RAM from 2048 MB to 4096 MB for Wazuh
 Signing into sec-user@linux-server
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz3.png></img>
 
-Installing cURL
+Installing cURL (I already had it installed, but this is for those who wants to follow along and build their own Homelab)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz4.png></img>
 
 Starting Wazuh Installation Wizard (note: the -i ignores minimum system requirements)
@@ -654,14 +654,19 @@ Starting Wazuh Installation Wizard (note: the -i ignores minimum system requirem
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz6.png></img>
 
+Username and Password to access the web interface
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz7.png></img>
 
+Storing Login information in text file
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz8.png></img>
 
+Accessing Wazuh Dashboard by entering localhost in the search bar (Note: the browser will mark it as not secure, but it is okay; just click advanced and proceed to website)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz9.png></img>
 
+Logging into Wazuh Dashboard
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz10.png></img>
 
+Wazuh Dashboard
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz11.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz12.png></img>
