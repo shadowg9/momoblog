@@ -683,12 +683,16 @@ Wazuh Dashboard
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz17.png></img>
 
+Using Domain Controller login to open Powershell with administrator privileges. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz18.png></img>
 
+Copying command to PowerShell in the Windows virtual machine
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz19.png></img>
 
+(Explain problem)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz20.png></img>
 
+Snapshot
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz21.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/waz22.png></img>
