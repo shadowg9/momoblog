@@ -636,108 +636,108 @@ Wazuh will be used as the central hub for security logging, analysis, defense, a
 <h4>VM Configurations</h4>
 
 Increasing CPU from 1 to 2
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz1.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz1.png></img>
 
 Increasing RAM from 2048 MB to 4096 MB for Wazuh
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz2.png></img>
 
 <h4>Setting up Wazuh Indexer + Server</h4>
 
 Signing into sec-user@linux-server
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz3.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz3.png></img>
 
 Installing cURL (I already had it installed, but this is for those who wants to follow along and build their own Homelab)
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz4.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz4.png></img>
 
 Starting Wazuh Installation Wizard (note: the -i ignores minimum system requirements)
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz5.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz5.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz6.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz6.png></img>
 
 Username and Password to access the web interface
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz7.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz7.png></img>
 
 Storing Login information in text file
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz8.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz8.png></img>
 
 Accessing Wazuh Dashboard by entering localhost in the search bar (Note: the browser will mark it as not secure, but it is okay; just click advanced and proceed to website)
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz9.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz9.png></img>
 
 Logging into Wazuh Dashboard
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz10.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz10.png></img>
 
 Wazuh Dashboard
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz11.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz11.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz12.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz12.png></img>
 
 
 <h4>Deploying Wazuh Agents</h4>
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz13.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz13.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz14.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz14.png></img>
 
 <h4>Deploying Wazuh Agent for Windows 11 Virtual Machine</h4>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz15.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz15.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz16.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz16.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz17.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz17.png></img>
 
 Using Domain Controller login to open Powershell with administrator privileges. 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz18.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz18.png></img>
 
 Copying command to PowerShell in the Windows virtual machine
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz19.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz19.png></img>
 
 Before the agent was successfully connected, I had troubleshooting problems where I had to increase the RAM and total storage of the virtual machine for Wazuh to start properly.  
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz20.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz20.png></img>
 
 Snapshot
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz21.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz21.png></img>
 
 <h4>Deploying Wazuh Agent for Ubuntu Linux Client Virtual Machine</h4>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz22.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz22.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz23.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz23.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz24.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz24.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz25.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz25.png></img>
 
 Snapshot
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz26.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz26.png></img>
 
 <h4>Deploying Wazuh Agent for Domain Controller Virtual Machine</h4>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz27.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz27.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz28.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz28.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz29.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz29.png></img>
 
 <h4>Adding Agents into Groups</h4>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz30.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz30.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz31.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz31.png></img>
 
 <h4>Onboarding Custom Configuration Log Files</h4>
 
 Wazuh already offers default logs that are automatically ingested into the Wazuh Indexer, but based on the upcoming Cyber Attack/Defend scenario, the types of logs collected will be expanded so both the Linux and Windows agents gather a more comprehensive dataset of log activity. 
 
 The empty agent.conf files will be editied to include these configuration statemenets. 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz32.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz32.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz33.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz33.png></img>
 
 Data is now being properly logged
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz34.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz34.png></img>
 
 Snapshot
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/waz34.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz34.png></img>
 
 <h2>Creating a Vulnerable Environment & Detections</h2>
 
