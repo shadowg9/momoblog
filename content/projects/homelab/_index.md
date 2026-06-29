@@ -737,7 +737,7 @@ Data is now being properly logged
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz34.png></img>
 
 Snapshot
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz34.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/Waz35.png></img>
 
 <h2>Creating a Vulnerable Environment & Detections</h2>
 
