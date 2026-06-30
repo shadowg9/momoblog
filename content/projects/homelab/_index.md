@@ -805,6 +805,8 @@ Create File Access Monitoring Alert
 
 <h2>Cyber Attack - Initial Access to Breached</h2>
 
+I will be simulating an end-to-end cyber-attack on the ProjectMomo's business network. The end goal will be to capture sensitive files and achieve persitence inside the busniess network, so we can extort out informaiton, as well as log back in the ProjectMomo network at our discretion.
+
 <h3>Provision Attacker Machine (Kali Linux)</h3>
 
 <h3>Reconnaissance - Initil Access</h3>
