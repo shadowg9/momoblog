@@ -743,6 +743,66 @@ Snapshot
 
 <h3>Setting up Detections & Alerts</h3>
 
+<h4>Creating Detection Alerts</h4>
+
+An alert for failed SSH attempts will be created. A monitor will be set up to analyze logs. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det5.png></img>
+
+WinRM Logon Alert 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det8.png></img>
+
+Editing agent.conf file for Windos Group
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det9.png></img>
+
+<h4>Restarting Wazuh</h4>
+
+Ubuntu Linux Server
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det10.png></img>
+
+Domain Controller
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det11.png></img>
+
+<h4>File Integrity Monitoring Dashboard</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det12.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det13.png></img>
+
+<h4>Sensitive File Detection Alert</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det14.png></img>
+
+Restart Manager so changes can take effect
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det15.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det16.png></img>
+
+Create File Access Monitoring Alert
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det17.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det18.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det19.png></img>
+
+<h4>Snapshot</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/det20.png></img>
+
 <h2>Cyber Attack - Initial Access to Breached</h2>
 
 <h3>Provision Attacker Machine (Kali Linux)</h3>
