@@ -823,12 +823,27 @@ I will be using the MomoSandbox Kali Linux virtual machine that I have been usin
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali3.png></img>
 
+<h4>Added Static IP Address in IPv4 Settings</h4>
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali4.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali6.png></img>
 
+<h4>Restarting Network Service and Pinging Domain Controller</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali10.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali11.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali12.png></img>
 
 
 
