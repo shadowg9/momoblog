@@ -10,9 +10,9 @@ layout = "single"
 Welcome to my VMware Homelab documentation. Below you’ll find instructions on how to complete the given objectives in regards to how I was able to create my own personal Homelab and how you can too if you follow the steps I posted. 
 
 Acronyms Defined
-- SOC: 
-- TDR:
-- XDR: 
+- SOC: Securtiy Operations Center, centralized unit where a cybersecurity group exists to manage potential security incidents and are generally set up in a series of tiers. Tier 1 Alert Analysts, monitors alerts and if needed escalates after analysis; Tier 2 Incident Responders, performs investigations and remediations; Tier 3 Subject Matter Experts, typically few in number, handle the tough cases. 
+- TDR: Threat Detection and Response;
+- XDR: Endpoint Detections
 - SIEM:  
 - IOC:
 
