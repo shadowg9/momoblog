@@ -24,7 +24,7 @@ I will create a Windows-native simulated enterprise environment that builds soft
 
 A core objective of this project is to simulate a realistic business network environment where my technical skills can be cultivated and applied in a virtual setting that mirrors a real-world enterprise infrastructure. 
 
-In building and securing a simulated organizational network, I will have gained practical cybersecurity skills and hands-on experience with SIEM platforms, vulnerability scanners, packet analyzers, and network monitoring solutions, 
+In building and securing a simulated organizational network, I will have gained practical cybersecurity skills and hands-on experience with SIEM platforms, vulnerability scanners, packet analyzers, and network monitoring solutions. 
 
 Doing this lab will also generate opportunities for me to practice incident response by investigating and mitigating simulated threats inlcuding, but not limited to, suspicious network activity, unauthorized access attempts, and malware infections. 
 
@@ -218,6 +218,8 @@ Connected Windows Workstation to DC IP Address (Preferred DNS Server)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Win14.png></img>
 
 <h3>Provisioning and Setting up Ubuntu Desktop</h3>
+
+Iso file can be found <a href="https://releases.ubuntu.com/jammy/" target="_blank">here</a>
 
 <h4>Setting up Ubuntu</h4>
 
