@@ -857,6 +857,8 @@ I will be using the MomoSandbox Kali Linux virtual machine that I have been usin
 
 <h3>Cyber Attack Prerequisites</h3>
 
+<h4>All Agents Being Active</h4>
+
 <h3>Reconnaissance - Initial Access</h3>
 
 <h3>Lateral Movement - Privilege Escalation</h3>
