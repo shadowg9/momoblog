@@ -833,8 +833,6 @@ I will be using the MomoSandbox Kali Linux virtual machine that I have been usin
 
 <h4>Disabled Power Management, Lock Screen, and Screensaver for Smoother Workflow</h4>
 
-<h4>Restarting Network Service and Pinging Domain Controller</h4>
-
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali7.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali8.png></img>
@@ -842,6 +840,8 @@ I will be using the MomoSandbox Kali Linux virtual machine that I have been usin
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali8.5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali8.75.png></img>
+
+<h4>Restarting Network Service and Pinging Domain Controller</h4>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali9.png></img>
 
