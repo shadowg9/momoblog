@@ -85,7 +85,7 @@ Select 'Change adaper settings'.
 Once selected, a pop-up window will display computer icon named 'Ethernet'. Right click this icon and select 'Properties'. Select 'Internet Protocol Version 4 (TCP/IPv4)' and select 'Properties'. This is where we can set the virtual device to a static IP address.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part2.png></img>
 
-I set my IP address to '192.178.217.5', my Subnet mask to '255.255.255.0' and my Default gateway to '192.168.217.2'. I could not have done '192.168.217.1' since VMware NAT usually uses .2 as the NAT gateway, while .1 is the host VMnet8 adapter.  
+I set my IP address to '192.168.217.5', my Subnet mask to '255.255.255.0' and my Default gateway to '192.168.217.2'. I could not have done '192.168.217.1' since VMware NAT usually uses .2 as the NAT gateway, while .1 is the host VMnet8 adapter.  
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step11Part3.png></img>
 
 <h4>Step 5: Promoting Active Directory to a Domain Controller</h4>  
@@ -813,7 +813,26 @@ I will be simulating an end-to-end cyber-attack on the ProjectMomo's business ne
 
 <h3>Provision Attacker Machine (Kali Linux)</h3>
 
-<h3>Reconnaissance - Initil Access</h3>
+Kali Linux is a specialized Linux distribution tailored for cybersecurity professionals and ethical hackers. It comes preloaded with tools designed for penetration testing, ethical hacking, and digital forensics. The operating system is widely used for assessing system vulnerabilities, testing network security, and investigating cyber incidents. 
+
+I will be using the MomoSandbox Kali Linux virtual machine that I have been using for my Security Tools documentations. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/kali6.png></img>
+
+
+
+
+<h3>Reconnaissance - Initial Access</h3>
 
 <h3>Lateral Movement - Privilege Escalation</h3>
 
