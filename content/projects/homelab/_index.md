@@ -851,6 +851,8 @@ I will be using the MomoSandbox Kali Linux virtual machine that I have been usin
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali12.png></img>
 
+<h4>Snapshot</h4>
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/kali13.png></img>
 
 <h3>Cyber Attack Prerequisites</h3>
