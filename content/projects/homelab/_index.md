@@ -514,6 +514,8 @@ Going back to Linux Client Machine, I will simulate an email polling service tha
 
 <h3>Provisioning and Setting up Security Onion</h3>
 
+Iso file can be found <a href="https://securityonionsolutions.com/software" target="_blank">here</a>
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion1.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Onion2.png></img>
