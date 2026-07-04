@@ -7,7 +7,7 @@ categories = ['updates']
 layout = "single"
 +++
 
-Welcome to my VMware Homelab documentation. Below you’ll find instructions on how to complete the given objectives in regards to how I was able to create my own personal Homelab and how you can too if you follow the steps I posted. 
+Welcome to my VMware Homelab documentation. Below you’ll find instructions on how to complete the given objectives in regards to how I was able to create my own personal Homelab and how you can too if you follow the steps I posted.
 
 Acronyms Defined
 - SOC: Securtiy Operations Center, centralized unit where a cybersecurity group exists to manage potential security incidents and are generally set up in a series of tiers. Tier 1 Alert Analysts, monitors alerts and if needed escalates after analysis; Tier 2 Incident Responders, performs investigations and remediations; Tier 3 Subject Matter Experts, typically few in number, handle the tough cases. 
@@ -863,13 +863,198 @@ I will be using the MomoSandbox Kali Linux virtual machine that I have been usin
 
 <h3>Updated Network Architecture Diagram</h3>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/CSHomelab2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/CSHomelab2.png></img> 
 
 <h3>Reconnaissance - Initial Access</h3>
 
+<h4>Reconnaissance</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/att1.png></img>
+
+Oftentimes referred to as 'recon', it is the initial step in a cyber attack or security assessment where malicious threat actors or penetration testers gather information about their target. The objective is to obtain an understanding of the system and potential vulnerabilies that may be present as a point of entry for attackers. There are two classifications for reconnaissance. These include active reconnaisance and passive reconnaissance. Active reconnaissance testing involves tools that actually interacts with the network in an observable manner. Something to note is that this method might alert defenders of an impending attack. Passive reconnaissance is the use of tools that do not provide information to the network like for example, Google allows you to gather information without sending packets. 
+
+<h4>Nmap</h4>
+
+I will enter the following command in the Kali Linux Attacker Virtual Machine: nmap -p1-1000 -Pn -sV 192.168.217.0/24. 
+
+- The Nmap command is a Network Mapper which is an open source tool used for network discovery and security auditing. It allows users to scan networks to identify attack surfaces or available network ports and services. 
+- The -p option is scanning ports from 1-1000.
+- The -sV flag initiates service scan discovery.
+- The -Pn flag bypasses ping blocking which results from routers or firewalls stopping the device from responding to ping results. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec.png></img>
+My Bitdefender detected and blocked the port scan: 192.168.217.50. To ensure my Bitdefender doesn't get in the way, I will 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec2.png></img>
+For this demonstration, we will assume that the attacker has knowledge that there is an IP address block assigned to the ProjectMomo network. 
+
+Windows Domain Controller Detected 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec3.png></img>
+
+Windows 11 Client Detected 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec4.png></img>
+
+Ubuntu Linux Desktop Client Detected
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec5.png></img>
+
+Ubuntu Linux Desktop Server Detected 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec6.png></img>
+
+Kali Linux Attacker Detected 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec7.png></img>
+
+Other Ports Detected 
+
+VMwarre Host-side VMnet8 Interface
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec8.png></img>
+
+VMware NAT Gateway
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec9.png></img>
+
+Unknown
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec10.png></img>
+
+Unknown
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec11.png></img>
+
+There is also the Security Onion Virtual Machine with the Static IP Address of 192.168.217.103 and the Corporate Linux Server with the Static IP Address of 192.168.217.108, but they were not shown since the machines are powered off due to lack of compute, storage, and memory resources on my local machine.
+
+<h4>Gaining Unauthorized Access to Corpoate Server via Hydra</h4>
+
+Disabled Ubuntu Linux Client to show what nmap finds when you specify it to the corp-svr. Note: I had to go back to install ssh and smtp because I have forgotten to do that while going through the lab. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec12.png></img>
+
+After the Corporate Server at 192.168.217.108 was successfully identified to be running an SSH service on TCP port 22, I attempted to establish a remote connection using the root account. The connection reached the server successfully and prompted for authentication, confirming that the SSH service was accessible; however, I did not know the correct password. To simulate a controlled password-auditing exercise within the homelab, I will be using Hydra, a login cracker security tool, that will be supplied with an authorized password wordlist titled rockyou.txt to test the SSH login and determine whether weak credentials could be discovered.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec13.png></img>
+
+Wordlists 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec15.png></img>
+
+Getting rockyou.txt file in home folder
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec16.png></img> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec17.png></img>
+
+<h3>Creating a Vulnerable Environment</h3>
+
+Note: I have forgotten to configure a vulnerable environment which was supposed to be done before I have set up Wazuh, but will interject here for the sake of chronocity and complete this before moving on with Hydra. This also explains my prior message regarding backtracking to install ssh and smtp.
+
+The CORP-SVR virtual machine will not have an Wazuh agent as this is supposed to be an intentional omission to demonstrate how the absence of detection controls can create a blind spot in identifying potentially malicious activity. 
+
+SSH was installed with the commands 'sudo apt update' and 'sudo apt install openssh-server -y'. Then the SSH Server was started and ensured it ran on boot with the commands 'sudo systemctl start ssh' and 'sudo systemctl enable ssh'. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/vuln1.png></img>
+
+The UFW rules were changed to allow SSH connections
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/vuln2.png></img>
+
+Opening SSH configuration file to set password to 'october' (the month of my birthday). I navigate to the #PermitRootLogin block, uncomment it, and then delete the 'prohibit-password' statement and have it be replaced by 'yes'. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/vuln3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/vuln4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/vuln5.png></img>
+
+<h3>Resuming Reconnaissance - Initial Access</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec18.png></img>
+
+Gained Access
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec19.png></img>
+
+<h4>Initial Access</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/att2.png></img>
+
+This is the first phase in a cyber attack where threat adversaries aim to establish a connection to the target network or system. It is a gateway to allow entry for attackes which enables them to progress through the subsequent stages of an attack. Initial Access has already been established since I have gained access to the Ubuntu Linux Corporate Server by cracking the weak password using Hyrda supplied with the rockyou.txt.
+
+Gathering information on device with 'cat /etc/os-release', 'hostname', and 'ip a'. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec20.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec21.png></img>
+
+Using netstat -tuln
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec22.png></img>
+
+You can notice the 8025 and 1025 ports which reveals the mappings of mailhog, but as the attacker we are currently unaware of what it could be. But if the attacker had networking knowledge, they would know that TCP ports 1025 and 8025 and prinmarily used together for local email and SMTP testing.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec24.png></img> 
+
+Process Scan
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec23.png></img>
+
+<h4>Accessing Web User Interface</h4>
+
+On the CORP-SRV machine, we can use http://localhost:8025 to access MailHog, but since I am on the attacker machine, I can use the static ip address of CORP-SRV. By entering in http://192.168.217.108/8025. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec25.png></img>
+
+Sending Email in CORP-SVR
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec26.png></img>
+
+Receiving Email in Attacker Machine
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec27.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec28.png></img>
+
+<h4>Phishing Email</h4>
+
+Sending Phishing Email taken from
+<a href=https://github.com/collinsmc23/projectsecurity-e101/tree/main/phishing-simulation target="_blank">here</a>. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec29.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec30.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec31.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec32.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec33.png></img>
+
+Setting up quick local web server with Apache that shows up when you type in local host in search bar. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec34.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec35.png></img>
+
+There was supposed to be a file logging in the credentials inputted but nothing was popping up. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec37.png></img>
+
+The problem was with the directory's permissions. Only the owner has write permissions and because of this, the Apache/PHP could not create a new file. I will just create the file manually and let Apache write to it. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec36.png></img>
+
+Login Details Revealed
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec38.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec39.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec40.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec41.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec42.png></img>
+
+Viewing account from Janed account on Linux Client machine. Realistically, the link would be a domain name as the ip address is a dead giveaway that it is malicious, but for the sake of the lab, we will continue like this.  
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec43.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec44.png></img>
+
+Obtaining User Login Information 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec45.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec46.png></img>
+
 <h3>Lateral Movement - Privilege Escalation</h3>
 
+<h4>Lateral Movement</h4>
+
+<h4>Privilege Escalation</h4>
+
 <h3>Data Exfiltration - Persistence</h3>
+
+<h4>Data Exfiltration</h4>
+
+<h4>Persistence</h4>
 
 <h2>Catching the Attacker</h2>
 
@@ -877,4 +1062,4 @@ I will be using the MomoSandbox Kali Linux virtual machine that I have been usin
 
 <h2>Project Takeaway</h2> 
 
-<h3>Updated Network Architecture Diagram</h3>
+Credit to <a href=https://www.youtube.com/@collinsinfosec target="_blank">Grant Collins</a> 
