@@ -1042,19 +1042,202 @@ Viewing account from Janed account on Linux Client machine. Realistically, the l
 Obtaining User Login Information 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/rec45.png></img>
 
+Logging in as Janed
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/rec46.png></img>
 
 <h3>Lateral Movement - Privilege Escalation</h3>
 
 <h4>Lateral Movement</h4>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/att3.png></img>
+
+This stage is where the adversary traverses the target's compromised network by using multiple accounts. They do so to discover resources or data that is worth stealing.
+
+It is an essential phase in many cyber attacks as it helps the adversary maintain persistence, avoid detection, and prepare for further actions such as data exfiltration or ransome deployment. Some common methods include credential dumping, exploiting vulnerabilities, and leveraging tools lke RDP or PowerShell. 
+
+Collecting Information
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat3.png></img>
+
+Nmap has a unique feature where it can go through all 65535 ports, but for the sake of time, I will do a port probe of 5985 and 5986. These TCP ports are the default ports used for WinRM and PowerShell Remoting. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat5.png></img>
+
+WinRM has been heavily abused in the past to perform lateral movement and privilege escalation and I will attempt to get shell by performing some addiitonal password spraying. 
+
+I will use a security password spraying tool known as NetExec which is a tools used to compromise services within a network such as SMB, SSH, LDAP, FTB, WMI, WINDRM, RDP, VNC, and MSSQL. Similar to Hyrda, NetExec takes a list of usernames and passwords. 
+
+For a demonstration, I will create a username and password file. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat8.png></img>
+
+Starting NetExec
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat9.png></img>
+
+Shows different protocols we can target with one of them being WINRM
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat10.png></img>
+
+Command to supply NetExec with the files we just created
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat11.png></img>
+
+<h4>Configuring a Vulnerabl Environment: Enabling WinRM on Windows 11 Client Machine</h4>
+
+Enabling WinRM on Windows 11 so NetExec can capture the Administrator username and password. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat12.png></img>
+
+<h4>Resuming Lateral Movement</h4>
+
+Captured username & password
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat13.png></img>
+
+I will be using an open-source project called Evil-WinRM which is a command-line tool that provides remote shell access to Windows machines over WinRM. This technique allows us to spawn a shell by levergaing insecure protocols and outdated software packages with known exploits. Using this tool, it will allow me to log into the Windows 11 Client Virtual Machine. 
+
+Evil-WinRM Help Page
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat15.png></img>
+
+I got a 'snakecase' error so I fixed it by updating the affected packages by running 'sudo apt update' and 'sudo apt full-upgrade -y'.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat16.png></img>
+
+Now have access to Windows Client Machine with the Administrator account. Now to pivot to the domain controller.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat17.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat18.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat19.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat20.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat15.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat16.png></img>
+
 <h4>Privilege Escalation</h4>
+
+This is the upwards movement to an account that enables root, admin, or higher-level privileges. By obtaining these higher privileges, the adversaries gain greater control over the systems.  
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/att4.png></img>
+
+Seeing what domain the Windows Client workstation is a part of and its corresponding IP address.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/esc1.png></img>
+
+Seeing what open ports the device has
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/esc2.png></img>
+
+<h4>Configuring a Vulnerable Environment: Enabling RDP on Domain Controller</h4>
+
+Going to settings > system > remote destop and toggling it on. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/esc3.png></img>
+
+<h4>Resuming Privilege Escalation</h4>
+
+Checking for more ports
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/esc4.png></img>
+
+Looks like the 3389 port is open which is the default network port used by Microsoft's Remote Desktop Protocol (RDP). I will use the 'xfreerdp' utility to establish a new session.
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/esc5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/esc6.png></img>
 
 <h3>Data Exfiltration - Persistence</h3>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/att5.png></img>
+
 <h4>Data Exfiltration</h4>
 
+Data exfiltration is the exporting of stolen data from an enterprise. The goal here is to extract as much valuable or sensitive infromation such as intellectual property, customer records, or financial information which can result in loss of future sales, impact the organization's reputation, and cost companies hundreds of milions of dollars in penalties, fines, and court settlements. 
+
+Navigating to the filepath of where the Secrets.txt file is located. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dat1.png></img>
+
+Since we have gained access to the target machine via RDP, we could sign into a cloud storage provider to upload their sensitive files, but that is not best practice as signing into a personal cloud account onto a compromised system would leave behind out footprint. There is the option of using an SMB of sharing files from the RDP accessed domain controller workstation to the Kali machine since they are on the same network, but that is not realistic in a real world setting. Instead, we will use the scp command line program to copy the files onto our kali linux machine (this method is also not very realistic due to OpenSSH not being installed, outbound SSH restrictions, and SOC threat detections; but will be using it for lab demonstration purposes). 
+
+scp command is unavailable so will need to install it before moving on with the lab on the original domain controller virtual machine
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dat2.png></img>
+
+I had to install OpenSSH from <a href="https://github.com/powershell/win32-openssh/releases" target="_">here</a> to be able to use the scp command line tool. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dat4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dat3.png></img>
+
+Now resuming back on my Kali Linux attacker machine, I re-enter the Domain Controller machine and use scp to copy the sensitive information onto my Kali Linux machine. 
+
+Connection was refused because I do not have the ssh service on my Kali linux, so I will enable that and retry. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dat5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dat6.png></img>
+
+Success! 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dat7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dat8.png></img>
+
 <h4>Persistence</h4>
+
+Refers to attackers maintaining access to the targeted system even after the initial intrusion has been discovered and remediated. This ensures the attacker's operations can continue despite interruptions.  
+
+Some common techniques include installing backfoors, creating rogue accounts, or leveraging tools for remote access like RDP or VPNs. Persistence mechanisms are often embedded deep into the system such as with registry modifications or startup scripts to resist detection and removal. These tactics are especially critical for longer-term campaigns where threat adversaries intend to maintain a foothold over extend periods. 
+
+Creating a local account
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per1.png></img>
+
+Verifying the new user created 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per2.png></img>
+
+Scheduled Task with Reverse Shell  
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per10.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per11.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per12.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per15.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per16.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per17.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per18.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per19.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per20.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per21.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/per22.png></img>
 
 <h2>Catching the Attacker</h2>
 
