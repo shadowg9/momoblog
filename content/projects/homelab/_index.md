@@ -1111,12 +1111,6 @@ I got a 'snakecase' error so I fixed it by updating the affected packages by run
 Now have access to Windows Client Machine with the Administrator account. Now to pivot to the domain controller.
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/lat17.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat18.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat19.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat20.png></img>
-
 
 <h4>Privilege Escalation</h4>
 
