@@ -1188,11 +1188,13 @@ Verifying the new user created
 Scheduled Task with Reverse Shell  
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/per3.png></img>
 
+Using python webobserver to upload the reverse.ps1 copy from the kali linux attacker machine to the domain controller. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/per4.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/per5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/per6.png></img>
+
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/per7.png></img>
 
@@ -1226,9 +1228,19 @@ Scheduled Task with Reverse Shell
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/per22.png></img>
 
+The cyber-attack from Initial Access to Breach has been completed. 
+
 <h2>Catching the Attacker</h2>
 
 <h3>Investigation & Defense</h3>
+
+During the attack, my Wazuh Dashboard triggered 3 alerts with the WinRM Logon monitor. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/inv1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/inv2.png></img>
+
+During my attack, I did not receive any logs regarding the secret.txt file, but after redoing some parts to have it pop up on my alerts, the full_log can be viewed indicating that the sensitive file was modified. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/inv3.png></img>
 
 <h2>Project Takeaway</h2> 
 
