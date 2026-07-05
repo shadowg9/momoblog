@@ -1117,13 +1117,6 @@ Now have access to Windows Client Machine with the Administrator account. Now to
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/lat20.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat13.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat14.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat15.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/lat16.png></img>
 
 <h4>Privilege Escalation</h4>
 
