@@ -12,7 +12,7 @@ Welcome to my VMware Homelab documentation. Below you’ll find instructions on 
 Acronyms Defined
 - SOC: Security Operations Center; centralized unit where a cybersecurity group exists to manage potential security incidents and are generally set up in a series of tiers. Tier 1 Alert Analysts, monitors alerts and if needed escalates after analysis; Tier 2 Incident Responders, performs investigations and remediations; Tier 3 Subject Matter Experts, typically few in number, handle the tough cases. 
 - TDR: Threat Detection and Response; framework that identifies, investigates, and mitigates malicious activities before they can cause critical damage. Typically includes the following stages: detection, investigation, containment, eradication, recovery, report, and risk mitigation. 
-- XDR: Extended Detection and Response; 
+- XDR: Extended Detection and Response; unified platform that automatically gathers and correlates threat data across multiple security layers. 
 - SIEM: Security Information and Event Management; provide alerts and relevant information to incident response teams by aggregating, normalizing, and enriching data into one central platform.    
 - IOC: Indicators of Compromise; indications that a system has been compromised by unauthorized activity.
 
@@ -1235,5 +1235,11 @@ During my attack, I did not receive any logs regarding the secret.txt file, but 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/inv3.png></img>
 
 <h2>Project Takeaway</h2> 
+
+As I was building this homelab, it showed me a holistic map of all the way all these different systems, security tools, networks, applications, security controls, configurations, and identities interact with one another, which is significant in providing a comprehensive understanding in how everything is integrated. Engaging with the homelab was a great experience in dealing with a complex interconnected system with activities such as DNS configurations with the Active Directory, requiring an understanding of authentication services and interoperability for Linux integration across different virtual machines. utilizing Wazuh which depended on functioning agents and adequate system resources, and the simulated attack as a whole which demonstrated how vulnerabilities in one part of an environment can be exploited to create more opportunities to gain access to higher role privileges. 
+
+The offensive portion of the lab reinforced my understanding of cybersecurity from an adversary's perspective. By going through the series of steps: reconnaissance, initial access, lateral movement, privilege escalation, data exfiltration, and persistence in a closed environment; I was able see how individual penetration techniques formed a larger attack chain. It was a game of chess as well as the attacker's objective is to try to extract as much data and information as possible without leaving behind footprints that may be detected by the collected telemetry created by SIEMs, antivirus, and firewalls.  
+
+This newfound perspective of attackers being able tp find monitoring blindspots to cover their tracks to persist in undetected malicious behavior is what showed me that simply deploying a SIEM or endpoint agent does not automatically produce complete security. This especially became apparent     
 
 Credit to <a href=https://www.youtube.com/@collinsinfosec target="_blank">Grant Collins</a> 
