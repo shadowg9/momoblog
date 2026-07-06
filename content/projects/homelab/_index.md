@@ -1216,8 +1216,6 @@ Using python webobserver to upload the reverse.ps1 copy from the kali linux atta
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/per16.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/per17.png></img>
-
 The cyber-attack from Initial Access to Breach has been completed. 
 
 <h2>Catching the Attacker</h2>
