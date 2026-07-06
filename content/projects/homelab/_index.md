@@ -10,8 +10,8 @@ layout = "single"
 Welcome to my VMware Homelab documentation. Below you’ll find instructions on how to complete the given objectives in regards to how I was able to create my own personal Homelab and how you can too if you follow the steps I posted.
 
 Acronyms Defined
-- SOC: Securtiy Operations Center; centralized unit where a cybersecurity group exists to manage potential security incidents and are generally set up in a series of tiers. Tier 1 Alert Analysts, monitors alerts and if needed escalates after analysis; Tier 2 Incident Responders, performs investigations and remediations; Tier 3 Subject Matter Experts, typically few in number, handle the tough cases. 
-- TDR: Threat Detection and Response; framework that identifies, investigates, and mitigates malicious activiites before they can cause critical damage. Typically includes the following stages: detection, investigation, containment, eradication, recovery, report, and risk mitigation. 
+- SOC: Security Operations Center; centralized unit where a cybersecurity group exists to manage potential security incidents and are generally set up in a series of tiers. Tier 1 Alert Analysts, monitors alerts and if needed escalates after analysis; Tier 2 Incident Responders, performs investigations and remediations; Tier 3 Subject Matter Experts, typically few in number, handle the tough cases. 
+- TDR: Threat Detection and Response; framework that identifies, investigates, and mitigates malicious activities before they can cause critical damage. Typically includes the following stages: detection, investigation, containment, eradication, recovery, report, and risk mitigation. 
 - XDR: Extended Detection and Response; 
 - SIEM: Security Information and Event Management; provide alerts and relevant information to incident response teams by aggregating, normalizing, and enriching data into one central platform.    
 - IOC: Indicators of Compromise; indications that a system has been compromised by unauthorized activity.
@@ -121,7 +121,7 @@ Right click the server in DNS on Server Manager and click 'DNS Manager'.
 Right click the domain and select 'Properties', then go to the 'Forwarders' tab. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part2.png></img>
 
-Click the 'Edit' buttons to add in Google's DNS server address (8.8.8.8) which will allows us to use the internet. What is basically happening if that all DNS requests are being forwarded to Google, which thens routes to the proper web server.  
+Click the 'Edit' buttons to add in Google's DNS server address (8.8.8.8) which will allows us to use the internet. What is basically happening if that all DNS requests are being forwarded to Google, which then routes to the proper web server.  
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/Step14Part3.png></img>
 
 Testing out the ping command to google's domain to make sure it replies back. 
@@ -769,7 +769,7 @@ WinRM Logon Alert
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/det8.png></img>
 
-Editing agent.conf file for Windos Group
+Editing agent.conf file for Windows Group
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/det9.png></img>
 
@@ -809,7 +809,7 @@ Create File Access Monitoring Alert
 
 <h2>Cyber Attack - Initial Access to Breached</h2>
 
-I will be simulating an end-to-end cyber-attack on the ProjectMomo's business network. The end goal will be to capture sensitive files and achieve persistence inside the busniess network, so we can extort out information, as well as log back in the ProjectMomo network at our discretion.
+I will be simulating an end-to-end cyber-attack on the ProjectMomo's business network. The end goal will be to capture sensitive files and achieve persistence inside the business network, so we can extort out information, as well as log back in the ProjectMomo network at our discretion.
 
 <h3>Provision Attacker Machine (Kali Linux)</h3>
 
@@ -883,7 +883,9 @@ I will enter the following command in the Kali Linux Attacker Virtual Machine: n
 - The -Pn flag bypasses ping blocking which results from routers or firewalls stopping the device from responding to ping results. 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/rec.png></img>
-My Bitdefender detected and blocked the port scan: 192.168.217.50. To ensure my Bitdefender doesn't get in the way, I will 
+My Bitdefender detected and blocked the port scan: 192.168.217.50. To ensure my Bitdefender doesn't get in the way, I will disable the antivirus. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/rec1.5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/rec2.png></img>
 For this demonstration, we will assume that the attacker has knowledge that there is an IP address block assigned to the ProjectMomo network. 
@@ -919,7 +921,7 @@ Unknown
 
 There is also the Security Onion Virtual Machine with the Static IP Address of 192.168.217.103 and the Corporate Linux Server with the Static IP Address of 192.168.217.108, but they were not shown since the machines are powered off due to lack of compute, storage, and memory resources on my local machine.
 
-<h4>Gaining Unauthorized Access to Corpoate Server via Hydra</h4>
+<h4>Gaining Unauthorized Access to Corporate Server via Hydra</h4>
 
 Disabled Ubuntu Linux Client to show what nmap finds when you specify it to the corp-svr. Note: I had to go back to install ssh and smtp because I have forgotten to do that while going through the lab. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/rec12.png></img>
@@ -936,6 +938,8 @@ Getting rockyou.txt file in home folder
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/rec16.png></img> 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/rec17.png></img>
+
+Note: A huge collection of multiple types of wordlists can be found <a href="https://github.com/danielmiessler/SecLists/tree/master" target="_blank">here</a>.
 
 <h3>Creating a Vulnerable Environment</h3>
 
@@ -1088,7 +1092,7 @@ Shows different protocols we can target with one of them being WINRM
 Command to supply NetExec with the files we just created
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/lat11.png></img>
 
-<h4>Configuring a Vulnerabl Environment: Enabling WinRM on Windows 11 Client Machine</h4>
+<h4>Configuring a Vulnerable Environment: Enabling WinRM on Windows 11 Client Machine</h4>
 
 Enabling WinRM on Windows 11 so NetExec can capture the Administrator username and password. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/lat12.png></img>
@@ -1098,7 +1102,7 @@ Enabling WinRM on Windows 11 so NetExec can capture the Administrator username a
 Captured username & password
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/lat13.png></img>
 
-I will be using an open-source project called Evil-WinRM which is a command-line tool that provides remote shell access to Windows machines over WinRM. This technique allows us to spawn a shell by levergaing insecure protocols and outdated software packages with known exploits. Using this tool, it will allow me to log into the Windows 11 Client Virtual Machine. 
+I will be using an open-source project called Evil-WinRM which is a command-line tool that provides remote shell access to Windows machines over WinRM. This technique allows us to spawn a shell by leveraging insecure protocols and outdated software packages with known exploits. Using this tool, it will allow me to log into the Windows 11 Client Virtual Machine. 
 
 Evil-WinRM Help Page
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/lat14.png></img>
@@ -1177,7 +1181,7 @@ Success!
 
 Refers to attackers maintaining access to the targeted system even after the initial intrusion has been discovered and remediated. This ensures the attacker's operations can continue despite interruptions.  
 
-Some common techniques include installing backfoors, creating rogue accounts, or leveraging tools for remote access like RDP or VPNs. Persistence mechanisms are often embedded deep into the system such as with registry modifications or startup scripts to resist detection and removal. These tactics are especially critical for longer-term campaigns where threat adversaries intend to maintain a foothold over extend periods. 
+Some common techniques include installing backdoors, creating rogue accounts, or leveraging tools for remote access like RDP or VPNs. Persistence mechanisms are often embedded deep into the system such as with registry modifications or startup scripts to resist detection and removal. These tactics are especially critical for longer-term campaigns where threat adversaries intend to maintain a foothold over extend periods. 
 
 Creating a local account
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/per1.png></img>
