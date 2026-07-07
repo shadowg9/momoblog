@@ -1,8 +1,12 @@
 +++
-start_date = "2026-06-21"
-end_date = "2026-07-06" 
+date = "2026-06-21"
 title = "Cybersecurity Homelab"
 draft = false
+
+start_date = "2026-06-21"
+end_date = "2026-07-06" 
+
+
 tags = ['projects']
 categories = ['updates']
 layout = "single"
