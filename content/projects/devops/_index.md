@@ -10,3 +10,5 @@ layout = "single"
 <h2>DevOps Architecture</h2>
 
 <h2>Terraform</h2>
+
+<h3>Step 1: Install AWS CLI</h3>
