@@ -37,7 +37,10 @@ Success!
 
 <h2>Developing Quick Mock Webpage for Selling Mats</h2>
 
-I will develop a small mock application that sells mats to customers. The mats that will be displayed on the webpage will request GET API's to fetch AI generated mats from three different AI agents: OpenAI's ChatGPT and Google's Gemini. 
+I will develop a small mock application that sells mats to customers. The mats that will be displayed on the webpage ~~will request GET API's to fetch AI generated mats from two different AI agents: OpenAI's ChatGPT and Google's Gemini ~~. Edit: will feature AI generated images from OpenAI's ChatGPT. 
+
+Edit: Late into this web application, I decided to just use pre-rendered AI generated images from OpenAI/s ChatGPT, since there was a hard billing limit that prevented me from using the APIs
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app37.png></img>
 
 <h3>Adding Existing Folder to GitHub Desktop</h3>
 
@@ -161,11 +164,9 @@ Logged Back with different Account which has different orders
 
 <h3>OpenAI's ChatGPT and Google's Gemini Image Generatopm API</h3> 
 
-Creating OpenAI API Key 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/app37.png></img>
 
-Creating Gemini API Key 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/app38.png></img>
+
+
 
 
 <h1>DevOps Portion</h1>
