@@ -16,6 +16,8 @@ layout = "single"
 
 <h1>Developing Web Application</h1>
 
+Note: I will not document this section too much since the bulk of this project is DevOps focused, but I will return with a more comprehensive overview of this section showcasing my code and how everything works together. 
+
 <h2>Running Default Packages</h2>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/app1.png></img>
@@ -35,10 +37,135 @@ Success!
 
 <h2>Developing Quick Mock Webpage for Selling Mats</h2>
 
-I will develop a small mock application that sells mats to customers. The mats that will be displayed on the webpage will request GET API's to fetch AI generated mats from three different AI agents: OpenAI's ChatGPT, Google's Gemini, and Anthropic's Claude. 
+I will develop a small mock application that sells mats to customers. The mats that will be displayed on the webpage will request GET API's to fetch AI generated mats from three different AI agents: OpenAI's ChatGPT and Google's Gemini. 
 
 <h3>Adding Existing Folder to GitHub Desktop</h3>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/git1.png></img>
+
+<h3>Setting up Database</h3>
+
+On NuGet Manager, I added the packages: MySql.EntityFrameworkCore, Microsoft.AspNetCore.Identity.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Design, and Microsoft.EntityFrameworkCore.Tools. 
+
+Created Database on MySQL
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app5.png></img>
+
+For security purposes, will be using user secrets to store my MySQL password.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app6.png></img>
+
+Generating First EF Core Migration to MySQL Database
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app7.png></img>
+
+After applying the command: "Update-Database -Context MomoMatsDbContext" in the Package Manager Console, the tables successfully loaded in the MySQL Workbench.
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app8.png></img>
+
+<h4>Mats Controller Database Integration</h4>
+
+I converted the MatsController from using a temporary in-memory DemoStore to retrieving mat data through Entity Framework Core and MomoMatsDbContext. To populate the application, I created a database initializer that seeds ten mat records into MySQL—five assigned to the OpenAI collection and five assigned to the Gemini collection—while preventing duplicate records during future application startups. I then verified the integration by querying the Mats table in MySQL Workbench and confirming that all ten records were successfully stored. During testing, I also identified and resolved a Docker networking issue: the application container could not reach MySQL through 127.0.0.1 because localhost referred to the container itself. I temporarily ran the application using the local HTTPS development profile, allowing the application to connect successfully to the locally hosted MySQL server and complete the initial database seeding process.
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app9.png></img>
+
+Before I continue onwards to convert the other two controllers in my project which are the CartController and OrdersController, I will setup user authentication.  
+
+<h3>Authentication</h3>
+
+<h4>Testing User Registration on Swagger</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app10.png></img>
+
+Email Validaiton
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app11.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app12.png></img>
+
+Password Validation
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app14.png></img>
+
+New Data Record Added on MySQL Workbench with Password Hash working
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app15.png></img>
+
+Testing Login with Cookies
+
+Faulty Login
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app16.png></img>
+
+Logging in with registered credentials
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app17.png></img>
+
+Getting Information of Logged in User
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app18.png></img>
+
+Logging Out
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app19.png></img>
+
+Clicking on /api/auth/me again after logging out
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app20.png></img>
+
+<h3>Adding the Register, Login, and Logout UI to the Home Page</h3>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app21.png></img>
+
+Registration UI
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app22.png></img>
+
+Login UI 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app23.png></img>
+
+Confirming Header Changes into Signed In State
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app24.png></img>
+
+Confirming New User Appeards in MySQL Database 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app25.png></img>
+
+The session was confirmed to persist too after I refreshed the page. 
+
+Logging in with user created on Swagger
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app26.png></img>
+
+<h3>Cart Test</h3>
+
+Adding in Orders with Momo User
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app27.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app28.png></img>
+
+The items have remained in the cart after refreshing the page. 
+
+Placing Order
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app29.png></img>
+
+Logged Out and No Order
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app30.png></img>
+
+Logged Back in Same Account and Order Persists
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app31.png></img>
+
+Logged Back with different Account which has different orders
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app32.png></img>
+
+<h3>Stylized Frontend</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app33.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app34.png></img>
+
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app35.png></img>
+
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app36.png></img>
+
+<h3>OpenAI's ChatGPT and Google's Gemini Image Generatopm API</h3> 
+
+Creating OpenAI API Key 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app37.png></img>
+
+Creating Gemini API Key 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app38.png></img>
 
 
 <h1>DevOps Portion</h1>
@@ -62,3 +189,14 @@ Confirming the installation
 
 I am downloading Terraform using the Chocolalatey command-line package manager on my Windows 11 PC. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra1.png></img>
+
+
+
+<h2>Project Takeaway</h2>
+
+<h2>Video Demo</h2>
+
+Chapter 1: Explaining Architecture Flow 
+Chapter 2: Deep Dive into Code
+Chapter 3: Traversing the Architr
+Coming Soon
