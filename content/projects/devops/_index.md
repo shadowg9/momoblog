@@ -37,7 +37,7 @@ Success!
 
 <h2>Developing Quick Mock Webpage for Selling Mats</h2>
 
-I will develop a small mock application that sells mats to customers. The mats that will be displayed on the webpage ~~will request GET API's to fetch AI generated mats from two different AI agents: OpenAI's ChatGPT and Google's Gemini ~~. Edit: will feature AI generated images from OpenAI's ChatGPT. 
+I will develop a small mock application that sells mats to customers. The mats that will be displayed on the webpage ~~will request GET API's to fetch AI generated mats from two different AI agents: OpenAI's ChatGPT and Google's Gemini ~~. Edit: will feature AI generated images from OpenAI's ChatGPT and Google's Gemini. 
 
 Edit: Late into this web application, I decided to just use pre-rendered AI generated images from OpenAI/s ChatGPT, since there was a hard billing limit that prevented me from using the APIs
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/app37.png></img>
@@ -162,11 +162,21 @@ Logged Back with different Account which has different orders
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/app36.png></img>
 
-<h3>OpenAI's ChatGPT and Google's Gemini Image Generatopm API</h3> 
+<h3>S3 Buckets and CloudFront to Store and Retrieve AI-generated Mats</h3> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app39.png></img>
 
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app40.png></img>
 
+Was going to user CloudFront to Retrieve the AI-generated Mats stored as objects in the S3 Buckets, but my aws account would not allow me to create the distribution since I am apprently unverified, so I will need to check in about that later/ In the meantime, I will just rely on S3 buckets. 
 
+Temporary Public Access until I can get Verified
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app41.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app42.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/app43.png></img>
 
 
 <h1>DevOps Portion</h1>
@@ -190,6 +200,11 @@ Confirming the installation
 
 I am downloading Terraform using the Chocolalatey command-line package manager on my Windows 11 PC. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra1.png></img>
+
+<h3>Creating AWS User for Security Keys and to Authenticate Terraform with AWS</h3>
+
+
+
 
 
 
