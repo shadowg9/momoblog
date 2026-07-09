@@ -307,7 +307,30 @@ Successfully Connected!
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/docker5.png></img>
 
+<h3>Creating GitHub Actions Workflow Directory</h3
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/docker6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker7.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker10.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker11.png></img>
+
+Had to change directory to my project becauser it wasn't opening on the local host.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker12.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker14.png></img>
+
+
+
+
 
 <h2>Resuming Terraform</h2>
 
@@ -328,8 +351,6 @@ From there, I created a Terraform configuration for an AWS architecture consisti
 Due to this, I am temporarily unable to progress throughout the DevOps project cause of AWS service quota restrictions and will narrow the scope for now to be Web Application image being pushed to CI/CD without involvement of the cloud. 
 
 My intended CI workflow is for a GitHub push to trigger GitHub Actions, which checks out the source code, builds and tests the application, builds the Docker image, scans it with Trivy, and then publishes the approved image to GitHub Container Registry. From there, the image would be deployed to Kubernetes on EKS, while the application connects to managed services such as RDS for MySQL and S3 for object storage.
-
-Because of 
 
 
 <h2>Video Demo</h2>
