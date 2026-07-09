@@ -9,6 +9,8 @@ layout = "single"
 
 <h2>DevOps Architecture</h2>
 
+<img src="https://momomats.s3.us-east-1.amazonaws.com/DevOps.svg"></img>
+
 <h3>Keywords</h3>
 
 - IaC: Infrastructure as Code tools allows users to manage to manage infrastructure with configuration files rather than a graphical user interface (GUI). 
@@ -202,6 +204,40 @@ I am downloading Terraform using the Chocolalatey command-line package manager o
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra1.png></img>
 
 <h3>Creating AWS User for Security Keys and to Authenticate Terraform with AWS</h3>
+
+It is not best practice to acquire security credentials from the root user due to critical compromise of the AWS account if an unauthrized individual were to gain access. So I will get get these security credentials with an account named terraform-momo'. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra2.png></img>
+
+Giving the user access to all services.
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra3.png></img>
+
+Creating Access Key
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra5.png></img>
+
+Configuring on CLI
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra6.png></img>
+
+Verifying the AWS CLI commands works on Powershell
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra7.png></img>
+
+Running Terraform
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra9.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra10.png></img>
+
+Commands I used:
+- terrafirn version: shows the installed version of Terraform
+- terraform fmt -recursive: automatically rewrites Terraform configuration files to a standard HCL layout 
+- terraform init: initializes the working directory with provider plugins and backend configuration
+- terraform validate: validates configuration files for syntax errors
+- terraform plan: shows what actions Terraform will take without applying them
+- Terraform apply: applies changes to reach the desired infrastructyre state 
 
 
 
