@@ -9,7 +9,11 @@ layout = "single"
 
 <h2>DevOps Architecture</h2>
 
+Animated Diagram
 <img src="https://momomats.s3.us-east-1.amazonaws.com/DevOps.svg"></img>
+
+Note: Some Icons were missing so here is also a static snapshot of the diagram. 
+<img src="https://momomats.s3.us-east-1.amazonaws.com/draw.png"></img>
 
 <h3>Keywords</h3>
 
