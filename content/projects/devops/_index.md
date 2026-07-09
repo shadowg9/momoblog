@@ -36,7 +36,11 @@ SSHing into Bastion Host from terraform directory. The Bastion Host served as a 
 
 Installing AWS Load Balancer Controller
 
-<h4>Part 4: CI/CD Pipeline</h4>
+Deploying External DNS
+
+<h4>Part 4: Argo CD</h4>
+
+<h4>Part 5: CI/CD Pipeline & Trivy</h4>
 
 <h1>Developing Web Application</h1>
 
@@ -299,21 +303,34 @@ Changing LaunchSettings.json
 Successfully Connected! 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/docker4.png></img>
 
-<h2>Resuming Terraform</h2>
-
-Verifying that all components were built on AWS 
-
-<h3>Step 4: Setting Up Terraform Remote Backend</h3>
-
 <h3>Building Docker Image from Dockerfile</h3>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/docker5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/docker6.png></img>
 
+<h2>Resuming Terraform</h2>
+
+Verifying that all components were built on AWS 
+
+<h3>Step 4: Setting Up Terraform Remote Backend</h3>
+
 <h2>Project Takeaway</h2>
 
-Current Progress: 
+<h3>Current Progress</h3>
+
+I wanted to learn DevOps using a real application, so I first built MomoMats, which is a full-stack ASP.NET Core application with authentication, user-specific carts, persistent orders, MySQL, and S3-hosted product images.
+
+I then containerized the application with Docker. During that process, I ran into a database networking problem because the application container was trying to reach MySQL through localhost. As a result, I temporarily switched to HTTPS localhost. 
+
+From there, I created a Terraform configuration for an AWS architecture consisting of a VPC, public and private subnets, networking resources, an EKS cluster, managed worker nodes, and a bastion host. The infrastructure provisioning process progressed substantially, but the EC2-backed compute resources were prevented from launching because of account-level vCPU being limited to 1 when I needed 6 and request for service quota increasing to that amount being rejected.
+
+Due to this, I am temporarily unable to progress throughout the DevOps project cause of AWS service quota restrictions and will narrow the scope for now to be Web Application image being pushed to CI/CD without involvement of the cloud. 
+
+My intended CI workflow is for a GitHub push to trigger GitHub Actions, which checks out the source code, builds and tests the application, builds the Docker image, scans it with Trivy, and then publishes the approved image to GitHub Container Registry. From there, the image would be deployed to Kubernetes on EKS, while the application connects to managed services such as RDS for MySQL and S3 for object storage.
+
+Because of 
+
 
 <h2>Video Demo</h2>
 
