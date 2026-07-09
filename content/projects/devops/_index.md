@@ -228,7 +228,7 @@ Configuring on CLI
 Verifying the AWS CLI commands works on Powershell
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra7.png></img>
 
-Running Terraform
+<h3>Step 3: Running Terraform</h3>
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra8.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra9.png></img>
@@ -241,9 +241,24 @@ Commands I used:
 - terraform init: initializes the working directory with provider plugins and backend configuration
 - terraform validate: validates configuration files for syntax errors
 - terraform plan: shows what actions Terraform will take without applying them
-- Terraform apply: applies changes to reach the desired infrastructyre state 
+- terraform apply: applies changes to reach the desired infrastructyre state 
+- terraform destroy: removes infrastructure defined in the configuration files 
 
+After running 'terraform apply', it took 33 minutes building before it ran an error of account quote limits.
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra11.png></img>
+
+I will clean up the partial deployment first with 'terraform destroy'.
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra12.png></img>
+
+Took 10 minutes to destroy 69 resources. 
+
+Next step is to fix the vCPU quota
+
+Verifying that all components were built on AWS 
+
+<h3>Step 4: Setting Up Terraform Remote Backend</h3>
 
 
 
