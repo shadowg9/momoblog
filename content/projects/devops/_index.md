@@ -20,6 +20,24 @@ Note: Some Icons were missing so here is also a static snapshot of the diagram.
 - IaC: Infrastructure as Code tools allows users to manage to manage infrastructure with configuration files rather than a graphical user interface (GUI). 
 - Swagger: suite of tools used to design, build, document, and consume RESTful APIs.
 
+<h3>Overview of the Diagram</h3>
+
+<h4>Part 1: Web Application</h4>
+
+Creating a E-Commerce Mats web application with working login, registration, cart, and order functionalities that are all stored in the MySQL database. 
+
+<h4>Part 2: Terraform</h4>
+
+Terraform will be used to provision the entire AWS configuration including VPCs, subnets, routing, and the EKS cluster. This will utilize an S3 remote backend for state management. 
+
+<h4>Part 3: AWS Configurations</h4>
+
+SSHing into Bastion Host from terraform directory. The Bastion Host served as a secure gateway. Installing AWS CLI, kubectl client, HELM, and eksctl in the Bastion Host
+
+Installing AWS Load Balancer Controller
+
+<h4>Part 4: CI/CD Pipeline</h4>
+
 <h1>Developing Web Application</h1>
 
 Note: I will not document this section too much since the bulk of this project is DevOps focused, but I will return with a more comprehensive overview of this section showcasing my code and how everything works together. 
@@ -256,14 +274,46 @@ Took 10 minutes to destroy 69 resources.
 
 Next step is to fix the vCPU quota
 
+I tried to make a support case to increase the service quota to 8 vCPUs but my request was rejected. I then tried to make an appeal and will be waiting on their response.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra12.png></img>
+
+I will most likely have to return to the cloud portion at a later time due to all the AWS service restrictions on my account. 
+
+In the meantime, I will try to push my Docker container image to the GitHub Container Registry (GHCR). 
+
+<h2>Docker Image to GHCR</h2>
+
+<h3>Fixing Connectivity Issue with Docker Container File and MySQL</h3>
+
+Previously, when I was developing the web application, I had to switch running via the Docker Container File to local HTTPS since the Docker container failed when DbInitializer tried to access MySQL. 
+
+Posting MySQL connection in new '.env.docker.local' file
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker1.png></img>
+
+Adding to .gitignore
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker2.png></img>
+
+Changing LaunchSettings.json
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker3.png></img>
+
+Successfully Connected! 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker4.png></img>
+
+<h2>Resuming Terraform</h2>
+
 Verifying that all components were built on AWS 
 
 <h3>Step 4: Setting Up Terraform Remote Backend</h3>
 
+<h3>Building Docker Image from Dockerfile</h3>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker5.png></img>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/docker6.png></img>
 
 <h2>Project Takeaway</h2>
+
+Current Progress: 
 
 <h2>Video Demo</h2>
 
