@@ -19,6 +19,7 @@ Note: Some Icons were missing so here is also a static snapshot of the diagram.
 
 - IaC: Infrastructure as Code tools allows users to manage to manage infrastructure with configuration files rather than a graphical user interface (GUI). 
 - Swagger: suite of tools used to design, build, document, and consume RESTful APIs.
+- Bastion Host: entry point to an isolated environment
 
 <h3>Overview of the Diagram</h3>
 
