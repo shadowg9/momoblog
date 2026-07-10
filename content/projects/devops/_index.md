@@ -1,11 +1,13 @@
 +++
 date = "2026-07-07"
-title = "AWS DevOps Project with Microservices and .NET Web Application"
+title = "AWS DevOps Project with .NET Web Application"
 draft = false
 tags = ['projects']
 categories = ['updates']
 layout = "single"
 +++
+
+Note: Microservices will be implemented later. 
 
 <h2>DevOps Architecture</h2>
 
@@ -307,6 +309,8 @@ Successfully Connected!
 <h3>Building Docker Image from Dockerfile</h3>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/docker5.png></img>
+
+- docker build -t momomats:local .
 
 <h3>Creating GitHub Actions Workflow Directory</h3
 
