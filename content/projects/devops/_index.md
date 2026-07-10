@@ -280,7 +280,7 @@ Took 10 minutes to destroy 69 resources.
 Next step is to fix the vCPU quota
 
 I tried to make a support case to increase the service quota to 8 vCPUs but my request was rejected. I then tried to make an appeal and will be waiting on their response.
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra13png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra12.5png></img>
 
 I will most likely have to return to the cloud portion at a later time due to all the AWS service restrictions on my account. 
 
