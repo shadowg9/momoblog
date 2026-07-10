@@ -328,11 +328,22 @@ Had to change directory to my project becauser it wasn't opening on the local ho
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/docker14.png></img>
 
+For the same image if I just want to restart it, I just use the command 'docker start' or 'stop momomats-ghcr'.
 
-
+For a new updated image after I would commit and push new code to origin, I would use these commands: 
+- docker stop momomats-ghcr
+- docker rm momomats-ghcr
+- docker pull ghcr.io/shadowg9/momomats:latest
+- docker run -d --name momomats-ghcr -p 8080:8080 --env-file .env.docker.local ghcr.io/shadowg9/momomats:latest
 
 
 <h2>Resuming Terraform</h2>
+
+My previous request that was cancelled was now appealed and now I can apply the terraform configurations to provision the AWS resources.
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra14.png></img>
 
 Verifying that all components were built on AWS 
 
