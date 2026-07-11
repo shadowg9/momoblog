@@ -350,6 +350,8 @@ My previous request that was cancelled was now appealed and now I can apply the 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra14.png></img>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra15.png></img>
+
 Verifying that all components were built on AWS 
 
 <h3>Step 4: Setting Up Terraform Remote Backend</h3>
