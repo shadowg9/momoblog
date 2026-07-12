@@ -421,6 +421,32 @@ Sudo apt update
 
 <h3>Installing AWS CLI, kubectl client, HELM, and & eksctl in Bastion Host</h3>
 
+<a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">AWS CLI</a>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+
+<a href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-using-native-package-management" target="_blank">kubectl client</a>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+
+<a href="" target="_blank">HELM</a>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+
+<a href="" target="_blank">eksctl</a>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+
 <h3>EKS Configuration</h3>
 
 <h2>Project Takeaway</h2>
