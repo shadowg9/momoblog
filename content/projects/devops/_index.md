@@ -354,6 +354,31 @@ My previous request that was cancelled was now appealed and now I can apply the 
 
 Since I have the available resources, I was able to procvision the AWS infrastructure within 10 minutes. 
 
+<h3>Step 4: Setting Up Terraform Remote Backend</h3>
+
+<h4>Creating bucket using terminal</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra27.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra28.png></img>
+
+<h4>Enabling Versioning and Bucket Encryption</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra29.png></img>
+
+<h4>Adding Backend Block in terraform.tf file</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra30.png></img>
+
+<h4>Initializing the Backend</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra31.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra32.png></img>
+
+
+<h2>AWS Configurations</h2>
+
 Verifying that all components were built on AWS
 
 EC2 Instances (Bastion Host & Worker Nodes)
@@ -376,7 +401,7 @@ NACL
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra20.png></img>
 
-<h3>Step 4: SSH into Bastion Host</h3>
+<h3>SSH into Bastion Host</h3>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra21.png></img>
 
@@ -394,13 +419,9 @@ Retried SSH Connection | Success
 Sudo apt update
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra26.png></img>
 
-<h3>Step 5: Setting Up Terraform Remote Backend</h3>
+<h3>Installing AWS CLI, kubectl client, HELM, and & eksctl in Bastion Host</h3>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra27.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra28.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra29.png></img>
+<h3>EKS Configuration</h3>
 
 <h2>Project Takeaway</h2>
 
