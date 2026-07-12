@@ -360,13 +360,47 @@ EC2 Instances (Bastion Host & Worker Nodes)
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra16.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra17.png></img>
-
 EKS Cluster
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra17.png></img>
 
+VPC
 
-<h3>Step 4: Setting Up Terraform Remote Backend</h3>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra18.png></img>
+
+NAT Gateway
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra19.png></img>
+
+NACL
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra20.png></img>
+
+<h3>Step 4: SSH into Bastion Host</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra21.png></img>
+
+Access was denied. I was able to successfully reach the EC2 instance, but Windows marked the permissions for the private key to be too open.  
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra22.png></img>
+
+I ran these commands as it was the documented Windows fic to reset the ACL. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra23.png></img>
+
+Retried SSH Connection | Success
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra24.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra25.png></img>
+
+Sudo apt update
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra26.png></img>
+
+<h3>Step 5: Setting Up Terraform Remote Backend</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra27.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra28.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra29.png></img>
 
 <h2>Project Takeaway</h2>
 
