@@ -352,7 +352,19 @@ My previous request that was cancelled was now appealed and now I can apply the 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/terra15.png></img>
 
-Verifying that all components were built on AWS 
+Since I have the available resources, I was able to procvision the AWS infrastructure within 10 minutes. 
+
+Verifying that all components were built on AWS
+
+EC2 Instances (Bastion Host & Worker Nodes)
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra16.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/terra17.png></img>
+
+EKS Cluster
+
+
 
 <h3>Step 4: Setting Up Terraform Remote Backend</h3>
 
