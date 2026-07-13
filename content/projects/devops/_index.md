@@ -511,6 +511,7 @@ Without the required CRDs, Kubernetes would not recognize the gaetway resource t
 
 <h4>Creating Gateway Class</h4>
 
+Cloning Repository inside Bastion Host
 Creating YAML Manifest
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws21.png></img>
 
