@@ -421,7 +421,11 @@ Sudo apt update
 
 <h3>Installing AWS CLI, kubectl client, HELM, and & eksctl in Bastion Host</h3>
 
+These four tools will turn the bastion host into an administrative workstation for my AWS and Kubernetes environment. The AWS CLI authenticates to AWS and retrieves EKS connection information, the eksctl creates or manages the EKS cluster and node groups, the kubectl deploys and troubleshoots resources inside the cluster, and the Helm install packaged applications and Kubernetes add-ons. 
+
 <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank">AWS CLI</a>
+
+The AWS Command Line Interface lets you manage AWS services from the terminal and provides commands for services such as EC2, S3, IAM, RDS, and EKS.  
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws1.png></img>
 
@@ -429,25 +433,33 @@ Sudo apt update
 
 <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-using-native-package-management" target="_blank">kubectl client</a>
 
+Primary command-line tool for communicating with a Kubernetes cluster through its Kubernetes API. It lets you deploy applications, insepct resources, and manage workloads running inside the cluster. 
+
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws4.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws3.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws5.png></img>
+<a href="https://helm.sh/docs/intro/install/" target="_blank">HELM</a>
 
-<a href="" target="_blank">HELM</a>
+Package Manager for Kubernetes. Instead of having to manually apply numerous Kuberentes YAML files one by one, Helm will package related Kubernetes resources into a resusable bundle called a chart. The command-line tool can install, upgrade, configure, and remove that application as one managed release. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws5.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws6.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws7.png></img>
+<a href="https://docs.aws.amazon.com/eks/latest/eksctl/installation.html" target="_blank">eksctl</a>
 
-<a href="" target="_blank">eksctl</a>
+Command-line utility specially designed to simplifiy the creation and management of Amazon EKS clusters. It can manager clusters, managed node groups, add-ons, IAM-related integrations, and other EKS-specific configurations. 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws7.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws8.png></img>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws9.png></img>
 
-<h3>EKS Configuration</h3>
+Importing kubeconfig file with this command: 'aws eks update-kubeconfig --region us-east-1 --name momomats-eks-cluster'
+
+<h3>Installing AWS Load Balancer</h3>
 
 <h2>Project Takeaway</h2>
 
