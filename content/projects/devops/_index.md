@@ -429,23 +429,23 @@ Sudo apt update
 
 <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-using-native-package-management" target="_blank">kubectl client</a>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws4.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws3.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws5.png></img>
 
 <a href="" target="_blank">HELM</a>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws6.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws7.png></img>
 
 <a href="" target="_blank">eksctl</a>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws8.png></img>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws2.png></img>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws9.png></img>
 
 <h3>EKS Configuration</h3>
 
