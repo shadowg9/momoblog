@@ -455,11 +455,83 @@ Command-line utility specially designed to simplifiy the creation and management
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws8.png></img>
 
+<h4>Importing Kubeconfig File</h4>
+
+AWS Configure to set up access and secret access key
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws9.png></img>
 
-Importing kubeconfig file with this command: 'aws eks update-kubeconfig --region us-east-1 --name momomats-eks-cluster'
+Importing kubeconfig file with this command: 'aws eks update-kubeconfig --region us-east-1 --name momomats-eks-cluster'.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws10.png></img>
 
-<h3>Installing AWS Load Balancer</h3>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws11.png></img>
+
+<h3>Installing AWS Load Balancer Controller</h3>
+
+<h4>Creating IAM Role</h4>
+
+Verifying our IAM OIDC Provider
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws12.png></img>
+
+Commands to eliminate the need to run '--profile terraform-momo' for every command.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws13.png></img>
+
+Installing IAM Policy Document for AWS LBC that will allow it to make calls to AWS APIs.Command: 'curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.14.1/docs/install/iam_policy.json'
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws14.png></img>
+
+Creating IAM policy using the policy downloaded in the previous step.
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws15.png></img>
+
+Creating IAM Role
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws16.png></img>
+
+<h4>Installing AWS LBC</h4>
+
+Adding the eks-charts <a href="https://github.com/aws/eks-charts" target="_target">Helm chart repository</a> and Updating Local Repository to ensure the most recent charts are installed
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws17.png></img>
+
+Installing AWS Load Balancer Controller (LBC)
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws18.png></img>
+
+Verifying that the Controller is Installed
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws19.png></img>
+
+<h3>Installing Gateway API</h3>
+
+<h4>Installation of Gateway API CRDs</h4>
+
+Installing Gateway Application Protocol Interface Custom Resource Definitions
+
+- Standard Gateway API CRDs (Used for L7 Routes): provides the core Gateway API resources used for gateways and HTTP-based routing.
+- Experimental Gateway API CRDs (Optional/Used for L4 Routes): add resources such as TCPRoute, UDPRoute, and TLSRoute, which are needed for Layer 4/NLB routing.
+- Installation of LBC Gateway API specific CRDs: provide AWS-specific configuration resources such as TargetGroupConfiguration, LoadBalancerConfiguration, and ListenerRuleConfiguration. 
+
+Without the required CRDs, Kubernetes would not recognize the gaetway resource types, and the controller could not create the corresponding AWS load balancers.  
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws20.png></img>
+
+<h4>Creating Gateway Class</h4>
+
+Creating YAML Manifest
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws21.png></img>
+
+Applying the Manifest
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws22.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws23.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws24.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws25.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws26.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws27.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws28.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws29.png></img>
+
+<h2>Deploying ArgoCD</h2>
 
 <h2>Project Takeaway</h2>
 
