@@ -544,6 +544,31 @@ Verifying Temporary Manifests
 
 <h2>Deploying ArgoCD</h2>
 
+<h3>Installing Argo CD</h3>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws30.png></img>
+
+<h3>Verifying the Pods and Service Name</h3>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws31.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws32.png></img>
+
+<h3>Applying and Verifying the TargetGroupConfiguration</h3>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws33.png></img>
+
+<h3>Temporary Argo Access</h3>
+
+Since the domain name is pending, I had to disable the HTTPRoute in one of the files which means that the TargetGroupConfiguration will exist, but will not be actively used by an ALB route until the HTTPRoute is enabled which will happen once the support team allows me to purchase the domain name.
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws34.png></img>
+
+Acquiring Argo CD Password
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/argo3.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/argo1.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/argo2.png></img>
+
+
 <h2>GitHub Actions CI Pipeline</h2>
 
 <h2>Resuming Creating Gateway Class</h2>
@@ -557,6 +582,32 @@ alb-config.yaml with puchased domain
 <h3>Applying External DNS</h3>
 
 <h4>Creating IAM Policy</h4> 
+
+<h1>Microsoft Azure Integration</h1>
+
+<h2>Setting Up</h2>
+
+<h3>Having Account</h3> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/azure2.png></img>
+
+<h3>Installing the Azure CLI</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/azure1.png></img>
+
+<h4>Verifying Installation</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/azure3.png></img>
+
+<h4>Logging in Azure CLI</h4>
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/azure4.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/azure5.png></img>
+
+<h2>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/azure6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/azure7.png></img>
 
 <h2>Project Takeaway</h2>
 
