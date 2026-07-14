@@ -532,7 +532,21 @@ gateway.yaml (temporary)
 alb-config.yaml (temporary HTTP-only)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws26.png></img>
 
-Applying the Temporary Manifest 
+Applying the Temporary Manifests 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws27.png></img>
+
+Verifying Temporary Manifests
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws28.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws29.png></img>
+
+<h2>Deploying ArgoCD</h2>
+
+<h2>GitHub Actions CI Pipeline</h2>
+
+<h2>Resuming Creating Gateway Class</h2>
 
 Purchased Domain 
 
@@ -540,15 +554,9 @@ gateway.yaml with purchased domain
 
 alb-config.yaml with puchased domain
 
-<h2>Deploying ArgoCD</h2>
+<h3>Applying External DNS</h3>
 
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws27.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws28.png></img>
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws29.png></img>
-
-<h2>Deploying ArgoCD</h2>
+<h4>Creating IAM Policy</h4> 
 
 <h2>Project Takeaway</h2>
 
