@@ -532,9 +532,15 @@ gateway.yaml (temporary)
 alb-config.yaml (temporary HTTP-only)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws26.png></img>
 
-Applying the Manifest 
+Applying the Temporary Manifest 
 
+Purchased Domain 
 
+gateway.yaml with purchased domain
+
+alb-config.yaml with puchased domain
+
+<h2>Deploying ArgoCD</h2>
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws27.png></img>
 
