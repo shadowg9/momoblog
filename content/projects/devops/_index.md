@@ -568,20 +568,45 @@ Acquiring Argo CD Password
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/argo2.png></img>
 
+<h2>Resuming Domain Issue</h2>
 
-<h2>GitHub Actions CI Pipeline</h2>
+The AWS Customer Support has still not responded back to me after a day, so I purchased a domain name from Namecheap with the name 'devopsmomo.online'. Namecheap will be the registar and Route 53 will become the DNS provider. 
 
-<h2>Resuming Creating Gateway Class</h2>
+<h3>Creating Public Hosted Zone</h3>
 
-Purchased Domain 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns1.png></img>
 
-gateway.yaml with purchased domain
+<h4>Entering Route 53 nameservers in Namecheap</h4>
 
-alb-config.yaml with puchased domain
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns2.png></img>
+
+<h4>Verifying the Delegation</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns3.png></img>
+
+<h3>Requesting the ACM Certificate</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns4.png></img>
+
+<h4>Creating the ACM Validation Records</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns5.png></img>
+
+<h3>Previous Files Fixed</h3>
+
+gateway.yaml
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns6.png></img>
+
+alb-config.yaml; which gets later reapplied with: kubectl apply -f alb-config.yaml
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns7.png></img>
+
+argocd-values-9.4.0.yaml
 
 <h3>Applying External DNS</h3>
 
 <h4>Creating IAM Policy</h4> 
+
+<h2>GitHub Actions CI Pipeline</h2>
 
 <h1>Microsoft Azure Integration</h1>
 
