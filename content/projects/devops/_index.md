@@ -521,13 +521,13 @@ gateway-class-yaml
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws23.png></img>
 
-gateway.yaml
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws24.png></img>
-
 For the other yaml files, I needed the hostname and TLS certificate for the domain, so I tried to make a purchase for the root domain: devopsmomo.link which was $5. But unfortunetly I received another error that prompted me to contact the customer support so I may have to wait a whole day again just like the last time I needed their assitance. This is pretty vexing to deal with at times. 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws25.png></img>
 
 Luckily, I can continue onwards as this domain is mainly required for the final public DNS and HTTPS layer. 
+
+gateway.yaml
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/aws24.png></img>
 
 alb-config.yaml (temporary HTTP-only)
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/aws26.png></img>
