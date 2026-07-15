@@ -702,8 +702,9 @@ Note: No Commentary
 
 <video width="1000" height="800" controls>
   <source src="https://videos-ms.s3.us-east-1.amazonaws.com/DevOps1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
+
+
 
 Chapter 1: Explaining Architecture Flow 
 Chapter 2: Deep Dive into Code
