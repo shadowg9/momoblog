@@ -649,9 +649,62 @@ Load Balancer Listeners and Rules
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/dns21.png></img>
 
+
 <h2>GitHub Actions CD Pipeline</h2>
 
+<h3>Deploying App on ArgoCD</h3>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd2.png></img>
+
+I was having issues with deploying the application on my pods, and I found out it is because I still need to host my MySQL database on my AWS RDS. 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd3.png></img>
+
+<h3>Creating AWS Relational Database System</h3>
+
+<h4>Creating RDS with Terraform</h4>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd4.png></img>
+
+Verifying RDS
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd5.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd6.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd7.png></img>
+
+<h3>Deploying App on ArgoCD Resumed</h3>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd9.png></img> 
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd9.png></img>
+
+<h4>ArgoCD Image Updater</h4>
+
+This will automatically sync the desired state with the cluster state whenever any changes are pushed into the GitHub Repository. There are two related mechanisms in this process. The Argo CD automatic sync detects changes to Kubernetes manifests in Git and reconciles the cluser with that desired state. The Argo CD Image Updater then detects a newly published GHCR image, updates the kustomization.yaml in Git, and pushes that change to main.   
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd10.png></img>
+
+<b>Test Run</b>
+
+Original Site
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd12.png></img>
+
+Code Change
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd11.png></img>
+
+ArgoCD Update
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd13.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd14.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd15.png></img>
+
+Updated Site
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd16.png></img>
 
 <h1>Microsoft Azure Integration</h1>
 
@@ -684,6 +737,7 @@ Finishing Touches
 Changing Trivy's exit-code to "1" so instead of just reporting vulnerabilities, it blocks publications when it detects high or critical security concerns.
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/cd1.png></img>
+
 <h2>Project Takeaway</h2>
 
 <h3>Current Progress</h3>
