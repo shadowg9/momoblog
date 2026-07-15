@@ -649,9 +649,12 @@ Load Balancer Listeners and Rules
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/dns21.png></img>
 
-<h2>GitHub Actions CI Pipeline</h2>
+<h2>GitHub Actions CD Pipeline</h2>
+
+Changing Trivy's exit-code to "1" so instead of just reporting vulnerabilities, it blocks publications when it detects high or critical security concerns. 
 
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd1.png></img>
 
 <h1>Microsoft Azure Integration</h1>
 
