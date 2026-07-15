@@ -600,13 +600,58 @@ gateway.yaml
 alb-config.yaml; which gets later reapplied with: kubectl apply -f alb-config.yaml
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/dns7.png></img>
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns9.png></img>
+
 argocd-values-9.4.0.yaml
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns8.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns10.png></img>
+
+<h4>Creating ArgoCD Domain Record</h4>
 
 <h3>Applying External DNS</h3>
 
 <h4>Creating IAM Policy</h4> 
 
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns11.png></img>
+
+Creating policy from the policy document
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns12.png></img>
+
+Verifying EKS Pod Identity Agent Add-on is Present
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns13.png></img>
+
+<h4>Using Pod Identity Agent for External DNS Setup</h4> 
+
+Creating Namespac
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns14.png></img>
+
+Pod Identity Association
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns15.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns16.png></img>
+
+<h4>Deploying ExternalDNS using Pod Identity</h4> 
+
+Adding Repository, Deploying in separate Namespace, and Verifying
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns17.png></img>
+
+Upgrading Install
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns18.png></img>
+
+<h3>Deploying ArgoCD</h3>
+
+Success!
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns19.png></img>
+
+Load Balancer Listeners and Rules
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns20.png></img>
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/dns21.png></img>
+
 <h2>GitHub Actions CI Pipeline</h2>
+
+
 
 <h1>Microsoft Azure Integration</h1>
 
@@ -650,6 +695,15 @@ My intended CI workflow is for a GitHub push to trigger GitHub Actions, which ch
 
 
 <h2>Video Demo</h2>
+
+<h3>Prologue: Visualized Architecture Flow</h3>
+
+Note: No Commentary
+
+<video width="1000" height="800" controls>
+  <source src="https://videos-ms.s3.us-east-1.amazonaws.com/DevOps1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 Chapter 1: Explaining Architecture Flow 
 Chapter 2: Deep Dive into Code
