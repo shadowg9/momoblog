@@ -706,7 +706,7 @@ Note: No Commentary
 
 
 
-Chapter 1: Explaining Architecture Flow 
-Chapter 2: Deep Dive into Code
-Chapter 3: Traversing the Architr
+<h3>Chapter 1: Explaining Architecture Flow</h3>
+<h3>Chapter 2: Deep Dive into Code</h3>
+<h3>Chapter 3: Traversing the Architecture</h3>
 Coming Soon
