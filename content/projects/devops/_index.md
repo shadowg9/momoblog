@@ -651,10 +651,7 @@ Load Balancer Listeners and Rules
 
 <h2>GitHub Actions CD Pipeline</h2>
 
-Changing Trivy's exit-code to "1" so instead of just reporting vulnerabilities, it blocks publications when it detects high or critical security concerns. 
 
-
-<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd1.png></img>
 
 <h1>Microsoft Azure Integration</h1>
 
@@ -682,6 +679,11 @@ Changing Trivy's exit-code to "1" so instead of just reporting vulnerabilities, 
 
 <img src=https://image-ms.s3.us-east-1.amazonaws.com/azure7.png></img>
 
+Finishing Touches 
+
+Changing Trivy's exit-code to "1" so instead of just reporting vulnerabilities, it blocks publications when it detects high or critical security concerns.
+
+<img src=https://image-ms.s3.us-east-1.amazonaws.com/cd1.png></img>
 <h2>Project Takeaway</h2>
 
 <h3>Current Progress</h3>
